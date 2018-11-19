@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_item_tag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_22DP"
+        android:text="标签1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_16SP" />
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+        android:paddingEnd="@dimen/DIMEN_12DP"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:paddingTop="@dimen/DIMEN_20DP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/separator_line" />
+
+
+</LinearLayout>

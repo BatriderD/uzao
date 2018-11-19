@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/DIMEN_12DP"
+    android:paddingStart="@dimen/DIMEN_12DP">
+
+    <com.zhaotai.uzao.richeditor.RichEditor
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:paddingBottom="@dimen/DIMEN_12DP"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingStart="@dimen/DIMEN_0DP"
+            android:paddingTop="@dimen/DIMEN_12DP"
+            android:text="评论"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cB3B3B3"
+            android:textSize="@dimen/DIMEN_10SP"
+            tools:text="(123)" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:background="@color/bg_page_gray" />
+</LinearLayout>

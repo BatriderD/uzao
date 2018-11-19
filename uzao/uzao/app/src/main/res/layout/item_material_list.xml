@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--商品图片-->
+    <ImageView
+        android:id="@+id/iv_product_spu_image"
+        android:layout_width="match_parent"
+        android:layout_height="161dp" />
+
+    <!--商品名-->
+    <TextView
+        android:id="@+id/iv_product_spu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <!--设计师-->
+    <TextView
+        android:id="@+id/tv_product_designer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/DIMEN_6DP"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_6DP"
+        android:textColor="@color/grey"
+        android:textSize="11sp" />
+
+    <!--价格-->
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/DIMEN_5DP"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_13SP" />
+</LinearLayout>

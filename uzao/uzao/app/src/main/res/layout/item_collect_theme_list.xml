@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--主题图片-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp">
+            <ImageView
+                android:id="@+id/iv_theme_image"
+                android:layout_width="match_parent"
+                android:layout_height="161dp" />
+
+            <ImageView
+                android:id="@+id/iv_theme_failure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_failure"
+                android:scaleType="matrix"
+                android:paddingStart="@dimen/DIMEN_12DP"
+                android:paddingTop="@dimen/DIMEN_10DP"
+                android:background="#44000000"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <!--主题名-->
+        <TextView
+            android:id="@+id/iv_theme_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_collect_theme_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_10DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:src="@drawable/icon_circle_unselected"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

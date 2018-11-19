@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/DIMEN_15DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46DP"
+        android:layout_marginEnd="@dimen/DIMEN_17DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP">
+        <!--售后单编号-->
+
+
+        <TextView
+            android:id="@+id/tv_my_after_sales_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+        <!--订单状态-->
+        <TextView
+            android:id="@+id/tv_my_after_sales_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/after_sale_status"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <!--分隔线-->
+    <include layout="@layout/item_separation_line" />
+
+
+    <!--<include layout="@layout/item_after_sale_content" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_my_after_sales_item_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--分隔线-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46DP"
+        android:layout_marginEnd="@dimen/DIMEN_18DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP">
+        <!--售后方式-->
+        <TextView
+            android:id="@+id/tv_my_after_sales_item_conduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+        <!--查看物流-->
+        <TextView
+            android:id="@+id/tv_my_after_sales_item_logistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_order_btn"
+            android:paddingBottom="@dimen/DIMEN_3DP"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_3DP"
+            android:text="@string/check_the_logistics"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+</LinearLayout>

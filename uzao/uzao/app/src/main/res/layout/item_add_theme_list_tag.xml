@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_tag"
+    android:layout_width="wrap_content"
+    android:layout_height="13dp"
+    android:background="@drawable/shape_bg_add_theme_item_tags_selector"
+    android:gravity="center"
+    android:paddingEnd="@dimen/DIMEN_5DP"
+    android:paddingStart="@dimen/DIMEN_5DP"
+    android:text="促销"
+    android:textColor="@color/selector_text_red_orange"
+    android:textSize="@dimen/DIMEN_9SP" />

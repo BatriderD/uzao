@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+    <!--标题栏 -->
+    <include layout="@layout/toolbar_normal" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--tab栏-->
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/tl_collection_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_45DP"
+                android:background="@color/white"
+                app:tl_indicator_color="@color/red"
+                app:tl_textSelectColor="@color/black"
+                app:tl_textUnselectColor="@color/grey"
+                app:tl_indicator_width="@dimen/DIMEN_50DP"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rl_product_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/DIMEN_5DP" />
+        </LinearLayout>
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>
+

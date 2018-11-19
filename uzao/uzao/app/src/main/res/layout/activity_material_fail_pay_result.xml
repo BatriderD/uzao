@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <ImageView
+        android:id="@+id/pay_state_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_60DP"
+        android:src="@drawable/ic_pay_fail" />
+
+    <TextView
+        android:id="@+id/pay_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="支付失败"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <TextView
+            android:id="@+id/tv_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_14SP" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_30DP"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!--继续逛逛-->
+        <TextView
+            android:id="@+id/return_main"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="返回首页"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/repay"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/shape_order_btn_yellow"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="8dp"
+            android:text="@string/repay"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_aspect"
+    android:layout_width="@dimen/DIMEN_100DP"
+    android:layout_height="@dimen/DIMEN_28DP"
+    android:layout_centerInParent="true"
+    android:layout_marginEnd="@dimen/DIMEN_25DP"
+    android:layout_marginStart="@dimen/DIMEN_25DP"
+    android:background="@drawable/shape_bg_aspect_selector"
+    android:gravity="center"
+    android:textColor="@color/design_material_aspect_selector"
+    android:textSize="@dimen/DIMEN_12SP" />

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/head_order_detail" />
+
+            <View android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_order_detail_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <include layout="@layout/foot_order_detail" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/order_detail_foot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_49DP"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/dividing_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/separator_line" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_right_btn"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_left_btn"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:layout_toStartOf="@+id/tv_order_detail_right_btn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+
+    </RelativeLayout>
+</LinearLayout>

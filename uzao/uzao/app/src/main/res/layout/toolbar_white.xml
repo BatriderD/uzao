@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar_size"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/tool_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:scaleType="center"
+        android:src="@drawable/back_black" />
+
+    <TextView
+        android:id="@+id/tool_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/iv_toolbar_right_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_toolbar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_search" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_brand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/DIMEN_5DP" />
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>

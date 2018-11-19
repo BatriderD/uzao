@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <EditText
+        android:id="@+id/et_profession_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:hint="@string/please_set_profession"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_profession_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_39DP"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_15SP" />
+</LinearLayout>

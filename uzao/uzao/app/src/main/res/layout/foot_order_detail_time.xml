@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:background="@color/pageBackGround" />
+
+    <!--订单编号-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_num1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+    <!--创建时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_time1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+    <!--付款时间-->
+    <RelativeLayout
+        android:id="@+id/rl_order_detail_pay_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_pay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+    <!--完成时间/或者关闭时间-->
+    <RelativeLayout
+        android:id="@+id/rl_order_detail_finish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP">
+
+        <TextView
+            android:id="@+id/tv_order_detail_finish_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_finish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_14DP" />
+
+    <LinearLayout
+        android:id="@+id/ll_invoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+
+        <!--发票类型-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/bill_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+
+            <TextView
+                android:id="@+id/tv_order_detail_invoice_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_15DP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--发票抬头-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/bill_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+
+            <TextView
+                android:id="@+id/tv_order_detail_invoice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_15DP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--发票内容-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/bill_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+
+            <TextView
+                android:id="@+id/tv_order_detail_invoice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_15DP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:background="@color/pageBackGround" />
+
+    <!--商品金额-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:text="@string/goods_price"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+    <!--活动立减-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:text="@string/activity_cut1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_cut_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+    <!--优惠券-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:text="@string/coupons"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_discount_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+    <!--实付金额-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:text="@string/real_pay"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_order_detail_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:background="@color/pageBackGround" />
+</LinearLayout>

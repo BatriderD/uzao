@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <include layout="@layout/item_separation_line" />
+
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe"
+            style="@style/Refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/pageBackGround"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_track_product_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_45DP"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_track_product_all_choose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/DIMEN_20DP"
+                        android:src="@drawable/icon_circle_unselected" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/DIMEN_5DP"
+                        android:layout_toEndOf="@id/iv_track_product_all_choose"
+                        android:text="全选"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_14SP" />
+
+                    <TextView
+                        android:id="@+id/tv_track_product_delete"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/red"
+                        android:gravity="center"
+                        android:text="删除"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+</LinearLayout>

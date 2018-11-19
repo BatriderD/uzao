@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tab_material"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!--综合排序-->
+    <TextView
+        android:id="@+id/tv_material_tab_sort_comprehensive"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/synthesize"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:background="@color/separator_line" />
+
+    <!--人气-->
+    <TextView
+        android:id="@+id/tv_material_tab_sort_popular"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="人气"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:background="@color/separator_line" />
+
+    <!--销量-->
+    <TextView
+        android:id="@+id/tv_material_tab_sort_sale"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="销量"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:background="@color/separator_line" />
+
+    <!--时间-->
+    <TextView
+        android:id="@+id/tv_material_tab_sort_time"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="时间"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:background="@color/separator_line" />
+
+    <!--筛选-->
+    <RelativeLayout
+        android:id="@+id/tv_material_tab_sort_filter"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/ic_filter"
+            android:drawablePadding="@dimen/DIMEN_2DP"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+    </RelativeLayout>
+</LinearLayout>

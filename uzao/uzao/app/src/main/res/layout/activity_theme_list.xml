@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:scaleType="center"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <!--搜索-->
+        <ImageView
+            android:id="@+id/iv_new_theme_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingStart="@dimen/DIMEN_8DP"
+            android:scaleType="center"
+            android:src="@drawable/icon_search_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+
+    <include layout="@layout/item_separation_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_sort_synthesize"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_theme_sort_synthesize"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="综合排序"
+                android:textColor="@color/selector_text_black_gray"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <View
+                android:id="@+id/v_sort_synthesize_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:layout_alignEnd="@id/tv_theme_sort_synthesize"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@id/tv_theme_sort_synthesize"
+                android:background="@color/red" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/DIMEN_1PX"
+            android:layout_height="@dimen/DIMEN_9DP"
+            android:layout_gravity="center_vertical"
+            android:background="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sort_time"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_theme_sort_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="时间排序"
+                android:textColor="@color/selector_text_black_gray"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <View
+                android:id="@+id/v_sort_time_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:layout_alignEnd="@id/tv_theme_sort_time"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@id/tv_theme_sort_time"
+                android:background="@color/red" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/DIMEN_10DP">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe"
+            style="@style/Refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/DIMEN_5DP" />
+
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+</LinearLayout>

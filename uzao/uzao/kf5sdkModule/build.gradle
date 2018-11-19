@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    api 'com.android.support:appcompat-v7:25.4.0'
+    api 'com.github.bumptech.glide:glide:3.8.0'
+    //    api project(':kf5SdkFramework')
+    api 'com.google.code.gson:gson:2.8.0'
+    //    api 'com.alibaba:fastjson:1.2.18'
+    api files('libs/com.kf5sdk.framework_v2-1.2.jar')
+}

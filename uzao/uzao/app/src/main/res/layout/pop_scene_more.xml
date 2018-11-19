@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pop_more_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/DIMEN_6DP"
+        android:paddingTop="@dimen/DIMEN_6DP"
+        android:text="置顶" />
+
+    <TextView
+        android:id="@+id/tv_pop_more_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_1PX"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/DIMEN_6DP"
+        android:paddingTop="@dimen/DIMEN_6DP"
+        android:text="编辑" />
+
+    <TextView
+        android:id="@+id/tv_pop_more_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_1PX"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/DIMEN_6DP"
+        android:paddingTop="@dimen/DIMEN_6DP"
+        android:singleLine="true"
+        android:text="精华" />
+
+    <TextView
+        android:id="@+id/tv_pop_more_del"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_1PX"
+        android:gravity="center"
+        android:paddingBottom="@dimen/DIMEN_6DP"
+        android:paddingTop="@dimen/DIMEN_6DP"
+        android:text="删除" />
+
+</LinearLayout>

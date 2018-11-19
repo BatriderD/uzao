@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_editor_black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_45DP"
+        android:background="@color/color_black">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DIMEN_15DP"
+            android:src="@drawable/icon_gb" />
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DIMEN_15DP"
+            android:src="@drawable/icon_next" />
+
+    </RelativeLayout>
+
+    <com.xiaopo.flying.sticker.SquareImageView
+        android:id="@+id/sqimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_100DP" />
+
+    <Switch
+        android:id="@+id/sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/DIMEN_85DP"
+
+        android:textOff="  "
+        android:textOn="  "
+        android:thumb="@drawable/shape_bg_white_alph_thumb_selector"
+        android:track="@drawable/shape_bg_white_alph_track_selector" />
+
+
+</RelativeLayout>

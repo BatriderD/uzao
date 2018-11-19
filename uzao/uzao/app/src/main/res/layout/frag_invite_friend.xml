@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_60DP"
+        android:src="@drawable/ic_invite_friend_empty" />
+
+    <TextView
+        android:id="@+id/tv_invite_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#989898"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <TextView
+        android:id="@+id/tv_invite_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#989898"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <Button
+        android:id="@+id/btn_invite"
+        android:layout_width="186dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/DIMEN_50DP"
+        android:background="@drawable/shape_button_red"
+        android:text="立即邀请"
+        android:textColor="@color/white" />
+
+</LinearLayout>

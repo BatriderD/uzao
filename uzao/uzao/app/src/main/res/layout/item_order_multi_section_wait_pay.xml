@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/pageBackGround" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <!--选择-->
+        <ImageView
+            android:id="@+id/tv_pay_order_choose"
+            android:layout_width="@dimen/DIMEN_40DP"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_circle_unselected" />
+
+        <TextView
+            android:id="@+id/tv_order_multi_section_order_num"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/tv_pay_order_choose"
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <!--订单状态-->
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wait_pay"
+            android:layout_marginEnd="@dimen/DIMEN_18DP"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:background="@color/separator_line" />
+</LinearLayout>

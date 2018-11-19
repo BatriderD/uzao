@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 点击状态下的效果 -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="@color/red" />
+        </shape>
+    </item>
+    <!-- 正常状态下(非点击)的效果 -->
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="#9A9A9A" />
+        </shape>
+    </item>
+
+</selector>

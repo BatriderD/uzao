@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/DIMEN_10DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_item_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_12DP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:background="@color/separator_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_19DP"
+        android:layout_marginEnd="@dimen/DIMEN_13DP"
+        android:layout_marginStart="@dimen/DIMEN_13DP"
+        android:layout_marginTop="@dimen/DIMEN_19DP"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/introduce"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <EditText
+            android:id="@+id/tv_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/DIMEN_5DP"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请描述该模块"
+            android:maxLength="300"
+            android:minLines="4"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_intro_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/DIMEN_8DP"
+        android:layout_marginEnd="@dimen/DIMEN_8DP"
+        android:text="剩余200字"
+        android:textColor="@color/black_produce"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:background="@color/separator_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/DIMEN_40DP">
+
+
+        <TextView
+            android:id="@+id/tv_add_module"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_12DP"
+            android:background="@drawable/shape_bg_grey_stroke"
+            android:gravity="center"
+            android:text="新增模块"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_15SP" />
+
+
+        <TextView
+            android:id="@+id/tv_edit_module"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/DIMEN_18DP"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_btn_stock_red_grey_selector"
+            android:textColor="@color/selector_text_black_red"
+            android:textSize="@dimen/DIMEN_15SP" />
+
+        <TextView
+            android:id="@+id/tv_del_module"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tv_edit_module"
+            android:background="@drawable/shape_bg_grey_stroke"
+            android:gravity="center"
+            android:text="@string/del"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_15SP" />
+
+
+    </RelativeLayout>
+</LinearLayout>

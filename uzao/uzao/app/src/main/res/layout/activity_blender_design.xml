@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_blender_design_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_60DP"
+        android:background="@color/color_black">
+
+        <ImageView
+            android:id="@+id/iv_blender_design_back"
+            android:layout_width="@dimen/DIMEN_50DP"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <ImageView
+            android:id="@+id/iv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DIMEN_12DP"
+            android:src="@drawable/icon_next" />
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/iv_ok"
+            android:padding="@dimen/DIMEN_12DP"
+            android:src="@drawable/icon_save_white" />
+    </RelativeLayout>
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--3d编辑区域-->
+            <WebView
+                android:id="@+id/webview_blender_design"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_3d_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="@dimen/DIMEN_5DP"
+                        android:drawableTop="@drawable/icon_3d_change"
+                        android:gravity="center_horizontal"
+                        android:text="动效"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_12SP" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_blender_material"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_material_color"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_material"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--底部操作面-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50DP"
+                android:background="@color/black"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bottom_material"
+                    android:layout_width="@dimen/DIMEN_0DP"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/DIMEN_5DP"
+                    android:drawableTop="@drawable/icon_material"
+                    android:gravity="center"
+                    android:text="材质"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_10SP" />
+
+                <TextView
+                    android:id="@+id/tv_bottom_design"
+                    android:layout_width="@dimen/DIMEN_0DP"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/DIMEN_5DP"
+                    android:drawableTop="@drawable/icon_edit"
+                    android:gravity="center"
+                    android:text="编辑"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_10SP" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>

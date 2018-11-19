@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item_my_material_category"
+    android:layout_width="@dimen/DIMEN_100DP"
+    android:layout_height="@dimen/DIMEN_36DP"
+    android:layout_marginBottom="@dimen/DIMEN_5DP"
+    android:layout_marginEnd="@dimen/DIMEN_12DP"
+    android:layout_marginStart="@dimen/DIMEN_12DP"
+    android:layout_marginTop="@dimen/DIMEN_5DP"
+    android:background="@drawable/bg_btn_red_grey_selector"
+    android:gravity="center"
+    android:text="全部"
+    android:textColor="@color/selector_text_white_black"
+    android:textSize="@dimen/DIMEN_12SP" />

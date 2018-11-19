@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_close" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ripple_btn"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:src="@drawable/icon_black_right" />
+
+        <ImageView
+            android:id="@+id/tool_bar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="标签最多可选择5个，让更多人发现您的集合..."
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <com.zhy.view.flowlayout.TagFlowLayout
+                android:id="@+id/id_flowlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/DIMEN_20DP"
+                android:paddingEnd="@dimen/DIMEN_12DP"
+                android:paddingStart="@dimen/DIMEN_12DP"
+                android:paddingTop="@dimen/DIMEN_20DP" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </LinearLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+</LinearLayout>

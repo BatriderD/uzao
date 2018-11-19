@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_item_designer_list_material_img"
+        android:layout_width="match_parent"
+        android:layout_height="175dp" />
+
+    <TextView
+        android:id="@+id/tv_item_designer_list_material_name"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+        <!--评论-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_14DP"
+                android:layout_height="@dimen/DIMEN_14DP"
+                android:src="@drawable/ic_material_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/DIMEN_5DP"
+                android:textColor="#676767"
+                android:textSize="@dimen/DIMEN_10SP" />
+        </LinearLayout>
+
+        <!--浏览数-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_14DP"
+                android:layout_height="@dimen/DIMEN_14DP"
+                android:src="@drawable/ic_eye" />
+
+            <TextView
+                android:id="@+id/tv_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/DIMEN_5DP"
+                android:textColor="#676767"
+                android:textSize="@dimen/DIMEN_10SP" />
+        </LinearLayout>
+
+        <!--喜欢-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_14DP"
+                android:layout_height="@dimen/DIMEN_14DP"
+                android:src="@drawable/ic_material_un_collect" />
+
+            <TextView
+                android:id="@+id/tv_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/DIMEN_5DP"
+                android:textColor="#676767"
+                android:textSize="@dimen/DIMEN_10SP" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

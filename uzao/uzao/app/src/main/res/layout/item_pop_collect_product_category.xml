@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_pop_category_name"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/DIMEN_10DP"
+        android:background="@drawable/shape_red_bg_rect_line"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_12SP" />
+</RelativeLayout>

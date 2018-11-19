@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--item分割-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_10DP"
+        android:background="@color/pageBackGround" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_45DP"
+        android:background="@color/white">
+        <!--订单编号-->
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--订单状态-->
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_18DP"
+            android:textColor="@color/red"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separator_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_order_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_pay_confirm_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+    <include layout="@layout/foot_order_list" />
+</LinearLayout>

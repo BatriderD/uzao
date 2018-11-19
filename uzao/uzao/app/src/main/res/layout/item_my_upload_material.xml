@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/DIMEN_10DP"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_my_upload_material_pic"
+        android:layout_width="@dimen/DIMEN_85DP"
+        android:layout_height="@dimen/DIMEN_85DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_my_upload_material_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_my_upload_material_pic"
+        android:layout_marginEnd="@dimen/DIMEN_25DP"
+        android:layout_marginStart="@dimen/DIMEN_24DP"
+        android:layout_toEndOf="@id/iv_my_upload_material_pic"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:maxWidth="@dimen/DIMEN_15DP"
+        android:text="2018抽象艺术插画作品"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+        android:id="@+id/tv_my_material_upload_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_my_upload_material_title"
+        android:layout_below="@id/tv_my_upload_material_title"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:text="2017-1-1"
+        android:textColor="#999999"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_my_upload_material_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_my_upload_material_pic"
+        android:layout_alignStart="@id/tv_my_upload_material_title"
+        android:text="免费"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</RelativeLayout>

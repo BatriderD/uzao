@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_26DP"
+        android:layout_marginTop="@dimen/DIMEN_26DP"
+        android:text="文字"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_17SP" />
+
+    <EditText
+        android:id="@+id/et_editor_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fadeScrollbars="true"
+        android:hint="请输入文字"
+        android:minLines="2"
+        android:maxLines="6"
+        android:gravity="top"
+        android:paddingEnd="@dimen/DIMEN_28DP"
+        android:maxWidth="@dimen/DIMEN_70DP"
+        android:paddingStart="@dimen/DIMEN_28DP"
+        android:paddingTop="@dimen/DIMEN_28DP"
+        android:scrollbars="vertical"
+        android:textColor="@color/c282828"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:layout_marginEnd="@dimen/DIMEN_26DP"
+        android:layout_marginStart="@dimen/DIMEN_26DP"
+        android:background="@color/red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_58DP"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/DIMEN_30DP"
+        android:layout_marginStart="@dimen/DIMEN_30DP"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_58DP"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/DIMEN_16DP"
+            android:text="@string/cancel"
+            android:textColor="@color/c282828"
+            android:textSize="@dimen/DIMEN_17SP" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_58DP"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/DIMEN_16DP"
+            android:text="@string/sure"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_17SP" />
+
+    </LinearLayout>
+
+</LinearLayout>

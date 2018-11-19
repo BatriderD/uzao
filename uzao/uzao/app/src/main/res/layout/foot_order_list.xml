@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_46DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <!--实付金额-->
+    <TextView
+        android:id="@+id/tv_order_real_pay_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:text="@string/real_pay"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_order_real_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/DIMEN_10DP"
+        android:layout_toEndOf="@id/tv_order_real_pay_tv"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <!--左边按钮-->
+        <TextView
+            android:id="@+id/tv_order_bottom_left_button"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_23DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--右边按钮-->
+        <TextView
+            android:id="@+id/tv_order_bottom_right_button"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_23DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+</RelativeLayout>

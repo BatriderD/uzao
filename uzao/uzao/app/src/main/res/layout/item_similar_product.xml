@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/DIMEN_5DP"
+    android:layout_marginEnd="@dimen/DIMEN_2DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--商品图片-->
+    <ImageView
+        android:id="@+id/iv_similar_spu_image"
+        android:layout_width="match_parent"
+        android:layout_height="161dp" />
+
+    <!--商品名-->
+    <TextView
+        android:id="@+id/tv_similar_spu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_7DP"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <!--价格-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_10DP"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="¥"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_9SP" />
+
+        <TextView
+            android:id="@+id/tv_similar_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_15SP" />
+    </LinearLayout>
+
+    <!--加入收藏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="@dimen/DIMEN_7DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:background="@drawable/shape_button_line_circle_red"
+            android:gravity="center"
+            android:text="加入收藏"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

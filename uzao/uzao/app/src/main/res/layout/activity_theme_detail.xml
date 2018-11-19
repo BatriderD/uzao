@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_publish_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        tools:text="场景详情" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:layout_above="@id/tv_publish_post"
+        android:background="@color/bg_page_gray"
+        android:visibility="gone" />
+
+    <com.zhaotai.uzao.widget.ScrollWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_line" />
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:scaleType="center"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxEms="11"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:id="@+id/tool_bar_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_10DP" />
+
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/tool_bar_right_img"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:src="@drawable/ic_un_collect" />
+
+        <View
+            android:id="@+id/v_tool_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_manage"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:padding="@dimen/DIMEN_5DP"-->
+    <!--android:text="管理页面" />-->
+</RelativeLayout>

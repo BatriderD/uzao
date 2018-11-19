@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_item_tag"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_30DP"
+    android:background="@drawable/bg_main_fragment_tag"
+    android:gravity="center"
+    android:textSize="@dimen/DIMEN_12SP"
+    android:textColor="@color/selector_main_frag_tag" />

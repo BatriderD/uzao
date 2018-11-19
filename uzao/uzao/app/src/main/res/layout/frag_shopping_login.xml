@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shopping_cart_login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/ic_state_empty_shopping_cart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/shopping_cart_1"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/shopping_cart_2"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/shopping_cart_login_btn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_btn_bg"
+        android:gravity="center"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:text="@string/immediately_login"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

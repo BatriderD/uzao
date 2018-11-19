@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_select_area"
+        android:layout_width="match_parent"
+        android:background="@color/light_grey"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:id="@+id/view_dev"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3DP"
+        android:layout_below="@id/rc_select_area"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</LinearLayout>

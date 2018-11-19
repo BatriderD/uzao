@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/bill_type"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <!--不开具发票-->
+            <TextView
+                android:id="@+id/no_bill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_12DP"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:layout_weight="1"
+                android:background="@drawable/shape_red_bg_rect_line"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/no_bill"
+                android:textColor="@color/red"
+                android:textSize="@dimen/DIMEN_13SP" />
+            <!--纸质普通发票-->
+            <TextView
+                android:id="@+id/bill_public"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_12DP"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rec_line_grey_dark"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/bill_public"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/pageBackGround" />
+
+    <LinearLayout
+        android:id="@+id/ll_bill_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_12DP"
+            android:text="@string/bill_title"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_bill_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/DIMEN_20DP"
+                android:paddingStart="@dimen/DIMEN_12DP"
+                android:src="@drawable/icon_circle_selected" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+
+            <ImageView
+                android:id="@+id/iv_bill_company"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="38dp"
+                android:paddingEnd="@dimen/DIMEN_20DP"
+                android:paddingStart="@dimen/DIMEN_12DP"
+                android:src="@drawable/icon_circle_unselected" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/pageBackGround" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <!--个人-->
+            <LinearLayout
+                android:id="@+id/ll_bill_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:paddingTop="@dimen/DIMEN_12DP"
+                    android:text="个人"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <EditText
+                    android:id="@+id/et_bill_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_45DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:background="@null"
+                    android:hint="请填写真实姓名"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <include layout="@layout/dividing_lines_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:paddingTop="@dimen/DIMEN_12DP"
+                    android:text="身份证"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <EditText
+                    android:id="@+id/et_bill_id_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_45DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:background="@null"
+                    android:hint="请填写正确的身份证号码"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+            </LinearLayout>
+
+            <!--公司-->
+            <LinearLayout
+                android:id="@+id/ll_bill_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:paddingTop="@dimen/DIMEN_12DP"
+                    android:text="公司名称"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <EditText
+                    android:id="@+id/et_bill_company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_45DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:background="@null"
+                    android:hint="请填写真实名称"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <include layout="@layout/dividing_lines_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:paddingTop="@dimen/DIMEN_12DP"
+                    android:text="纳税人识别号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+
+                <EditText
+                    android:id="@+id/et_bill_company_id_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_45DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:background="@null"
+                    android:hint="请填写正确的识别号"
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--发票内容-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:text="@string/bill_content"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/bill_content"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/right_arrow"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="请选择发票内容"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

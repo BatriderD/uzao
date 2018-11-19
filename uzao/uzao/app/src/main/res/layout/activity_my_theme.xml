@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <include
+        layout="@layout/view_recycle_view"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/DIMEN_50DP">
+
+        <TextView
+            android:id="@+id/tv_add_theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="新建场景"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_15SP"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_theme_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_theme_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:drawablePadding="@dimen/DIMEN_14DP"
+                android:drawableStart="@drawable/my_track_icon_selector"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/DIMEN_13DP"
+                android:paddingStart="@dimen/DIMEN_13DP"
+                android:text="全选"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_theme_del"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/del"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_15SP" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

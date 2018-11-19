@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--商品图片-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp">
+
+            <ImageView
+                android:id="@+id/iv_product_spu_image"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"/>
+
+            <View
+                android:id="@+id/view_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#77999999"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <!--商品名-->
+        <TextView
+            android:id="@+id/iv_product_spu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:maxLines="1"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--设计师-->
+        <TextView
+            android:id="@+id/tv_product_designer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/DIMEN_6DP"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_6DP"
+            android:textColor="@color/grey"
+            android:textSize="11sp" />
+
+        <!--价格-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_5DP"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:layout_marginEnd="@dimen/DIMEN_10DP">
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/DIMEN_13SP" />
+
+            <TextView
+                android:id="@+id/tv_material_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/DIMEN_13SP"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_collect_material_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_10DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:src="@drawable/icon_circle_unselected" />
+</RelativeLayout>

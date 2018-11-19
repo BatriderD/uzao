@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/DIMEN_10DP"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_my_material_pic"
+        android:layout_width="@dimen/DIMEN_85DP"
+        android:layout_height="@dimen/DIMEN_85DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_my_material_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_my_material_pic"
+        android:layout_marginEnd="@dimen/DIMEN_25DP"
+        android:layout_marginStart="@dimen/DIMEN_24DP"
+        android:layout_toEndOf="@id/iv_my_material_pic"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:maxWidth="@dimen/DIMEN_15DP"
+        android:text="2018抽象艺术插画作品"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+        android:id="@+id/tv_my_material_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_my_material_title"
+        android:layout_below="@id/tv_my_material_title"
+        android:layout_marginTop="@dimen/DIMEN_12DP"
+        android:textColor="#999999"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_my_material_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_my_material_pic"
+        android:layout_alignStart="@id/tv_my_material_title"
+        android:text="已购买"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_my_material_time_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_my_material_pic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_13DP"
+        android:text="剩余时长：3个月"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_material_bar"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_my_material_pic"
+        android:layout_marginBottom="@dimen/DIMEN_12DP">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_marginStart="@dimen/DIMEN_12DP"
+            android:background="@color/separator_line" />
+
+
+        <TextView
+            android:id="@+id/tv_material_del"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="112dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_dialog_right_white"
+            android:gravity="center"
+            android:text="@string/del"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_material_buy_again"
+            android:layout_width="@dimen/DIMEN_81DP"
+            android:layout_height="@dimen/DIMEN_24DP"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_dialog_left_white"
+            android:gravity="center"
+            android:text="@string/buy_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

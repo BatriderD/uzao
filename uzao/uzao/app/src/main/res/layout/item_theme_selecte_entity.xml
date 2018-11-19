@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/DIMEN_50DP"-->
+        <!--android:background="@color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:text="修改元素"-->
+        <!--android:textColor="@color/grey"-->
+        <!--android:textSize="@dimen/DIMEN_11SP" />-->
+
+    <TextView
+        android:id="@+id/tv_add_custom_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_add_material"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_add_designer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_add_new_spu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_add_new_material"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/re_choose"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_1DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/del"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <View
+        android:id="@+id/view_dev"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3DP"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/sheet_text_color"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</LinearLayout>

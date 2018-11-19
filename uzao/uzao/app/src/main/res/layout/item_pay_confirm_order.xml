@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--订单号-->
+    <TextView
+        android:id="@+id/tv_pay_confirm_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46DP"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separator_line" />
+
+    <!--地址-->
+    <LinearLayout
+        android:id="@+id/ll_pay_confirm_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/DIMEN_3DP"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="15dp"
+            android:paddingTop="@dimen/DIMEN_15DP">
+            <!--收货人-->
+            <TextView
+                android:id="@+id/tv_pay_confirm_receive_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/DIMEN_6DP"
+                android:drawableStart="@drawable/address_person"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+            <!--电话-->
+            <TextView
+                android:id="@+id/tv_pay_confirm_receive_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/DIMEN_50DP"
+                android:drawablePadding="@dimen/DIMEN_6DP"
+                android:drawableStart="@drawable/address_phone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+            <!--收货地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_pay_confirm_receive_people"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/DIMEN_8DP">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_3DP"
+                    android:contentDescription="@null"
+                    android:src="@drawable/address" />
+
+                <TextView
+                    android:id="@+id/tv_pay_confirm_receive_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_6DP"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_13SP" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_address_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/address_bottom_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_pay_confirm_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <!--订单金额-->
+    <TextView
+        android:id="@+id/tv_pay_confirm_order_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_44DP"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="@dimen/DIMEN_18DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:background="@color/pageBackGround" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cv_material_pic"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_margin="@dimen/DIMEN_5DP"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_item_all_material_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_all_material_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_2DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:background="@drawable/bg_price_tab_selector"
+        android:gravity="center_vertical"
+        android:text="免费"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:translationZ="@dimen/DIMEN_2DP" />
+
+    <TextView
+        android:id="@+id/tv_material_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/DIMEN_12DP"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</RelativeLayout>

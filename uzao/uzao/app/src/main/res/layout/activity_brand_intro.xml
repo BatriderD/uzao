@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="216dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="#77000000" />
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/DIMEN_15DP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_17SP" />
+
+        <ImageView
+            android:id="@+id/iv_brand_head"
+            android:layout_width="@dimen/DIMEN_70DP"
+            android:layout_height="@dimen/DIMEN_70DP"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_brand_all_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:paddingEnd="@dimen/DIMEN_35DP"
+        android:paddingStart="@dimen/DIMEN_35DP"
+        android:textColor="#191919"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:paddingEnd="@dimen/DIMEN_35DP"
+        android:paddingStart="@dimen/DIMEN_35DP"
+        android:text="简介:"
+        android:textColor="#191919"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <TextView
+        android:id="@+id/tv_brand_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:paddingEnd="@dimen/DIMEN_35DP"
+        android:paddingStart="@dimen/DIMEN_35DP"
+        android:textColor="#9a9a9a"
+        android:textSize="12sp" />
+
+</LinearLayout>

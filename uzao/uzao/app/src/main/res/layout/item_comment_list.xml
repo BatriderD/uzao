@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:a_zhon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--评论头像-->
+    <ImageView
+        android:id="@+id/tv_comment_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:contentDescription="@null" />
+
+    <com.zhaotai.uzao.widget.RatingBar
+        android:id="@+id/rb_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_comment_pic"
+        android:layout_toEndOf="@id/tv_comment_pic"
+        a_zhon:clickable="false"
+        a_zhon:image_height="22dp"
+        a_zhon:image_padding="3dp"
+        a_zhon:image_width="22dp"
+        a_zhon:star_count="5"
+        a_zhon:star_img="@drawable/ic_star_show"
+        a_zhon:unstar_img="@drawable/ic_star_hide" />
+
+    <!--评论人昵称-->
+    <TextView
+        android:id="@+id/tv_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_comment_pic"
+        android:layout_marginStart="@dimen/DIMEN_10DP"
+        android:layout_toEndOf="@id/tv_comment_pic"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+
+    <!--评价时间-->
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <!--规格属性-->
+    <TextView
+        android:id="@+id/tv_comment_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment_name"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="@dimen/DIMEN_6DP"
+        android:gravity="center_vertical"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <!--评价内容-->
+    <TextView
+        android:id="@+id/tv_comment_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment_property"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <!--评价图片-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_comment_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_comment_list_content"
+        android:layout_marginEnd="@dimen/DIMEN_8DP"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:layout_marginTop="12dp"/>
+
+    <!--回复-->
+    <TextView
+        android:id="@+id/tv_comment_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:textColor="#E58D8D"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:layout_marginEnd="@dimen/DIMEN_8DP"
+        android:layout_marginBottom="@dimen/DIMEN_8DP"
+        android:layout_below="@id/recycler_comment_pic"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_15DP"
+        android:layout_below="@id/tv_comment_reply"
+        android:background="@color/pageBackGround" />
+</RelativeLayout>

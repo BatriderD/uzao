@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/pageBackGround"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/after_sales_reject"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_apply_after_sales_detail_reject_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

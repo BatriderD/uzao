@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_theme_pic"
+        android:layout_width="@dimen/DIMEN_80DP"
+        android:layout_height="@dimen/DIMEN_80DP"
+        android:layout_margin="@dimen/DIMEN_12DP"
+        android:src="@drawable/icon_add_module" />
+
+    <TextView
+        android:id="@+id/tv_theme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/DIMEN_20DP"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_theme_pic"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+
+    <TextView
+        android:id="@+id/tv_product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/tv_theme_name"
+        android:layout_below="@id/tv_theme_name"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:text="685件商品"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+
+    <TextView
+        android:id="@+id/tv_material_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_theme_name"
+        android:layout_marginStart="@dimen/DIMEN_23DP"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:layout_toEndOf="@id/tv_product_count"
+        android:text="685件商品"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:layout_alignParentBottom="true"
+        android:background="@color/separator_line" />
+
+
+</RelativeLayout>

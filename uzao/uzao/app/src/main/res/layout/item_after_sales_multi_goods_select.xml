@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_check_goods"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:contentDescription="@null"
+        android:scaleType="center"
+        android:src="@drawable/icon_circle_unselected" />
+
+    <ImageView
+        android:id="@+id/iv_order_goods_image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_check_goods"
+        android:contentDescription="@null" />
+
+    <!--商品名-->
+    <TextView
+        android:id="@+id/tv_order_goods_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_order_goods_image"
+        android:layout_toEndOf="@id/iv_order_goods_image"
+        android:maxLines="2"
+        android:paddingEnd="@dimen/DIMEN_12DP"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <!--商品规格-->
+    <TextView
+        android:id="@+id/tv_order_goods_properties"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_order_goods_title"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:layout_toEndOf="@id/iv_order_goods_image"
+        android:maxLines="2"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <!--金额-->
+    <TextView
+        android:id="@+id/tv_order_goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_order_goods_image"
+        android:layout_toEndOf="@id/iv_order_goods_image"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <!--授权时长-->
+    <TextView
+        android:id="@+id/tv_material_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_order_goods_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_12DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_12SP"
+        android:visibility="gone" />
+
+
+    <!--选择数量-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/shape_shopping_cart_button_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/tv_order_goods_price">
+
+        <ImageView
+            android:id="@+id/iv_goods_spu_sub"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/sub" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="25dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_order_goods_num"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="25dp"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:id="@+id/iv_goods_spu_add"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:background="@color/separator_line" />
+
+</RelativeLayout>

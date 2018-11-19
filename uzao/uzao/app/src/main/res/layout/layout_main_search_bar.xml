@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_home_search"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar_size"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_home_home_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/DIMEN_12DP"
+        android:src="@drawable/ic_home_bell" />
+
+    <ImageView
+        android:id="@+id/iv_home_bell_num"
+        android:layout_width="@dimen/DIMEN_20DP"
+        android:layout_height="@dimen/DIMEN_20DP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/DIMEN_8DP" />
+
+    <ImageView
+        android:id="@+id/iv_home_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingEnd="@dimen/DIMEN_12DP"
+        android:paddingStart="@dimen/DIMEN_12DP"
+        android:src="@drawable/ic_scan" />
+
+    <TextView
+        android:id="@+id/tv_home_home_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_31DP"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_toEndOf="@id/iv_home_scan"
+        android:layout_toStartOf="@id/iv_home_home_bell"
+        android:background="@drawable/shape_bg_search"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/icon_search_black"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/DIMEN_15DP"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+</RelativeLayout>

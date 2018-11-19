@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.youth.banner.Banner xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:id="@+id/banner_theme"--><!--android:layout_width="match_parent"--><!--android:layout_height="180dp"--><!--app:image_scale_type="fit_xy"--><!--android:layout_centerInParent="true"--><!--android:clipToPadding="false"--><!--android:paddingStart="@dimen/DIMEN_70DP"--><!--android:paddingEnd="@dimen/DIMEN_70DP"/>-->
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/recycler"/>

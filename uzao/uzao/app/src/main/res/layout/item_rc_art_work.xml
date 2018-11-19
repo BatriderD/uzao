@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_100DP"
+    android:layout_height="@dimen/DIMEN_100DP"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="@dimen/DIMEN_88DP"
+        android:layout_height="@dimen/DIMEN_88DP"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_filter_title"
+        android:layout_width="@dimen/DIMEN_90DP"
+        android:layout_height="@dimen/DIMEN_16DP"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_filter_title_bg"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_11SP" />
+</RelativeLayout>

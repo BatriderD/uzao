@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--地址-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_view_address"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/DIMEN_3DP"
+    android:paddingEnd="@dimen/DIMEN_10DP"
+    android:paddingStart="15dp"
+    android:paddingTop="@dimen/DIMEN_15DP">
+    <!--收货人-->
+    <TextView
+        android:id="@+id/tv_product_order_detail_receive_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/DIMEN_6DP"
+        android:drawableStart="@drawable/address_person"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+    <!--电话-->
+    <TextView
+        android:id="@+id/tv_product_order_detail_receive_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/DIMEN_6DP"
+        android:drawableStart="@drawable/address_phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+    <!--收货地址-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_order_detail_receive_people"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/DIMEN_8DP">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_3DP"
+            android:src="@drawable/address" />
+
+        <TextView
+            android:id="@+id/tv_product_order_detail_receive_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_6DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+</RelativeLayout>

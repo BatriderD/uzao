@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/rl_title_bar"
+        layout="@layout/toolbar_normal" />
+
+    <LinearLayout
+        android:id="@+id/ll_selector_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_40DP"
+        android:layout_below="@id/rl_title_bar"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_bought_material"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_bought_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="已购素材"
+                android:textColor="@color/selector_tab_material"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <TextView
+                android:id="@+id/tv_bought_material_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_5DP"
+                android:layout_toEndOf="@id/tv_bought_material"
+                android:text="(0)"
+                android:textColor="@color/selector_tab_material"
+                android:textSize="@dimen/DIMEN_9SP" />
+
+            <ImageView
+                android:id="@+id/iv_arr"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tv_bought_material_num"
+                android:padding="@dimen/DIMEN_5DP"
+                android:src="@drawable/ic_acc_down" />
+            <View
+                android:id="@+id/v_bought_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignStart="@id/tv_bought_material"
+                android:background="@color/red"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@id/tv_bought_material"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_1DP"
+            android:layout_height="@dimen/DIMEN_9DP"
+            android:layout_gravity="center"
+            android:src="@color/separator_line" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_my_upload_material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="上传素材"
+                android:textColor="@color/selector_tab_material"
+                android:textSize="@dimen/DIMEN_14SP" />
+            <View
+                android:id="@+id/v_upload_line"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignStart="@id/tv_my_upload_material"
+                android:background="@color/red"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@id/tv_my_upload_material"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_selector_bar">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1" />
+
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_my_material_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_selector_bar"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:background="@color/separator_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rl_rl_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/DIMEN_5DP"
+            android:layout_marginTop="@dimen/DIMEN_5DP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:background="@color/separator_line" />
+    </LinearLayout>
+
+</RelativeLayout>

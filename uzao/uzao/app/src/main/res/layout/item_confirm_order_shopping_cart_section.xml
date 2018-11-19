@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_10DP"
+        android:background="@color/pageBackGround" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_46DP"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_confirm_order_section_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_20DP"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_confirm_order_section_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_12SP" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9" />
+</LinearLayout>

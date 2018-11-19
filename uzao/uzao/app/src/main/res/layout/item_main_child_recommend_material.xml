@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="214dp">
+
+    <FrameLayout
+        android:id="@+id/fl_main_child_recommend_material_pic"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:padding="15dp"
+        android:background="@color/pageBackGround" >
+
+        <ImageView
+            android:id="@+id/iv_main_child_recommend_material_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+
+    <!--设计-->
+    <TextView
+        android:id="@+id/tv_main_child_recommend_material_btn_design"
+        android:layout_width="@dimen/DIMEN_35DP"
+        android:layout_height="@dimen/DIMEN_35DP"
+        android:layout_alignBottom="@id/fl_main_child_recommend_material_pic"
+        android:layout_alignEnd="@id/fl_main_child_recommend_material_pic"
+        android:layout_marginBottom="@dimen/DIMEN_5DP"
+        android:layout_marginEnd="@dimen/DIMEN_5DP"
+        android:background="@drawable/shape_main_custom_made"
+        android:elevation="@dimen/DIMEN_10DP"
+        android:gravity="center"
+        android:text="@string/design"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <TextView
+        android:id="@+id/tv_main_child_recommend_material_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_main_child_recommend_material_pic"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_3DP"
+        android:layout_marginEnd="@dimen/DIMEN_8DP"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:layout_marginTop="@dimen/DIMEN_6DP"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <LinearLayout
+        android:id="@+id/ll_tag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_13DP"
+        android:layout_marginEnd="@dimen/DIMEN_8DP"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_12DP"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+</LinearLayout>

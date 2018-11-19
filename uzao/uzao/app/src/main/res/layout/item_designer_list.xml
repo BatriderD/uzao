@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="97dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="1px"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_designer_avatar"
+        android:layout_width="@dimen/DIMEN_66DP"
+        android:layout_height="@dimen/DIMEN_66DP"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/DIMEN_12DP" />
+
+    <TextView
+        android:id="@+id/tv_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_25DP"
+        android:layout_toEndOf="@id/iv_designer_avatar"
+        android:text="鬼才"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+    <TextView
+        android:id="@+id/tv_designer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_51DP"
+        android:layout_toEndOf="@id/iv_designer_avatar"
+        tools:text="粉丝：1000   作品：1000"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <TextView
+        android:id="@+id/tv_designer_attention"
+        android:layout_width="@dimen/DIMEN_78DP"
+        android:layout_height="@dimen/DIMEN_22DP"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/DIMEN_12DP"
+        android:background="@drawable/bg_btn_red_grey_selector"
+        android:gravity="center"
+        android:text="已关注"
+        android:textColor="@color/selector_text_white_black" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white" />
+
+    <!--反馈标题-->
+    <EditText
+        android:id="@+id/et_feedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:background="@color/white"
+        android:hint="*标题"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <!--反馈内容-->
+    <EditText
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="*反馈内容"
+        android:maxLength="100"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:paddingTop="@dimen/DIMEN_10DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <!--手机号码-->
+    <EditText
+        android:id="@+id/et_feedback_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:background="@color/white"
+        android:hint="*手机号码"
+        android:inputType="phone"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <!--邮箱-->
+    <EditText
+        android:id="@+id/et_feedback_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:background="@color/white"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="@dimen/DIMEN_14DP"
+        android:paddingStart="@dimen/DIMEN_14DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+</LinearLayout>

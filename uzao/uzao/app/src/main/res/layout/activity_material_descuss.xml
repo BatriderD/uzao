@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/rl_title_bar"
+        layout="@layout/toolbar_normal" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title_bar"
+        android:layout_marginTop="@dimen/DIMEN_10DP">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe"
+            style="@style/Refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_51DP"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <include layout="@layout/item_separation_line" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/publish"
+            android:textColor="@color/black_produce"
+            android:textSize="@dimen/DIMEN_15SP" />
+
+        <EditText
+            android:id="@+id/et_talk_word"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/DIMEN_10DP"
+            android:layout_marginStart="@dimen/DIMEN_12DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:maxLength="500"
+            android:layout_toStartOf="@id/tv_publish"
+            android:background="@drawable/bg_dialog_right_white"
+            android:gravity="center_vertical"
+            android:hint="添加评论"
+            android:paddingStart="@dimen/DIMEN_11SP"
+            android:textColor="@color/black_produce"
+            android:textColorHint="@color/black_produce"
+            android:textSize="@dimen/DIMEN_15SP" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

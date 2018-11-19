@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--第一种方法-->
+    <!--<item android:drawable="@drawable/shape_border_press" android:state_pressed="true" />-->
+    <!--<item android:drawable="@drawable/shape_border_nor" android:state_window_focused="false"/>-->
+
+    <!--第二种方法-->
+    <!--默认情况下是一个带圆角,白色背景,蓝色边框的矩形-->
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+
+
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke android:width="1dp" android:color="#CDCDCD"></stroke>
+            <!--填充颜色-->
+            <solid android:color="@color/black" />
+
+            <!-- 矩形的圆角半径 -->
+            <corners android:bottomLeftRadius="@dimen/DIMEN_3DP" android:topLeftRadius="@dimen/DIMEN_3DP" />
+
+        </shape>
+    </item>
+    <!--单击时是一个带圆角,白色背景,绿色边框的矩形-->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke android:width="1dp" android:color="#CDCDCD"></stroke>
+            <!--填充颜色-->
+            <solid android:color="@color/white" />
+
+            <!-- 矩形的圆角半径 -->
+            <corners android:bottomLeftRadius="@dimen/DIMEN_3DP" android:topLeftRadius="@dimen/DIMEN_3DP" />
+
+        </shape>
+    </item>
+</selector>

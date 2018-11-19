@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/message_detail_item_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_20DP"
+        android:background="@color/message_detail_item_title"
+        android:paddingBottom="@dimen/DIMEN_7DP"
+        android:paddingLeft="@dimen/DIMEN_10DP"
+        android:paddingRight="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_7DP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_8DP"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/DIMEN_22DP"
+        android:paddingLeft="@dimen/DIMEN_15DP"
+        android:paddingRight="@dimen/DIMEN_20DP"
+        android:paddingTop="@dimen/DIMEN_22DP">
+
+        <TextView
+            android:id="@+id/tv_message_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/selector_text_black_red"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_message_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_message_detail_title"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+    </RelativeLayout>
+</LinearLayout>

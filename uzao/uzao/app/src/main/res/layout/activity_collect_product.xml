@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:scaleType="center"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <!--管理按钮-->
+        <TextView
+            android:id="@+id/tv_collect_product_title_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingStart="@dimen/DIMEN_6DP"
+            android:src="@drawable/icon_search_black"
+            android:text="管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <!--搜索按钮-->
+        <ImageView
+            android:id="@+id/tv_collect_product_title_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/tv_collect_product_title_manager"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_8DP"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:src="@drawable/icon_search_black"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_collect_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_16SP" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignEnd="@id/tv_collect_top_left"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@id/tv_collect_top_left"
+                android:background="@color/red" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_collect_top_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="素材"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_16SP" />
+
+        <TextView
+            android:id="@+id/tv_collect_top_theme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="主题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_16SP" />
+    </LinearLayout>
+
+    <include layout="@layout/dividing_lines_1" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_collect_product"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_40DP"
+                android:background="#f7f7f7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--全部商品-->
+                <RelativeLayout
+                    android:id="@+id/ll_collect_product_all_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_product_tab_category_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="商品分类"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_14SP" />
+
+                    <!--收藏商品数量-->
+                    <TextView
+                        android:id="@+id/tv_collect_product_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/DIMEN_4DP"
+                        android:layout_toEndOf="@id/tv_product_tab_category_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_9SP" />
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="9dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/DIMEN_4DP"
+                        android:layout_toEndOf="@id/tv_collect_product_num"
+                        android:src="@drawable/ic_acc_down" />
+
+                    <View
+                        android:id="@+id/view_collect_product_tab_bottom_line_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_1DP"
+                        android:layout_alignEnd="@id/tv_product_tab_category_name"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignStart="@id/tv_product_tab_category_name"
+                        android:background="@color/red" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/DIMEN_1DP"
+                    android:layout_height="@dimen/DIMEN_14DP"
+                    android:background="#d9d9d9" />
+
+                <!--降价商品-->
+                <RelativeLayout
+                    android:layout_width="@dimen/DIMEN_0DP"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_collect_product_down_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="降价商品"
+                        android:textColor="#676767"
+                        android:textSize="@dimen/DIMEN_14SP" />
+
+                    <View
+                        android:id="@+id/view_collect_product_tab_bottom_line_2"
+                        android:layout_width="55dp"
+                        android:layout_height="@dimen/DIMEN_1DP"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/DIMEN_1DP"
+                    android:layout_height="@dimen/DIMEN_14DP"
+                    android:background="#d9d9d9" />
+
+                <!--失效商品-->
+                <RelativeLayout
+                    android:layout_width="@dimen/DIMEN_0DP"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_collect_product_failure_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="失效商品"
+                        android:textColor="#676767"
+                        android:textSize="@dimen/DIMEN_14SP" />
+
+                    <View
+                        android:id="@+id/view_collect_product_tab_bottom_line_3"
+                        android:layout_width="55dp"
+                        android:layout_height="@dimen/DIMEN_1DP"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/red"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_person_collection_product_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_collect_product"
+                android:layout_marginTop="@dimen/DIMEN_4DP" />
+
+            <RelativeLayout
+                android:id="@+id/ll_collect_product_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_45DP"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_collect_product_all_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/DIMEN_20DP"
+                    android:src="@drawable/icon_circle_unselected" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/DIMEN_5DP"
+                    android:layout_toEndOf="@id/iv_collect_product_all_choose"
+                    android:text="全选"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_14SP" />
+
+                <TextView
+                    android:id="@+id/tv_collect_product_delete"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+</LinearLayout>

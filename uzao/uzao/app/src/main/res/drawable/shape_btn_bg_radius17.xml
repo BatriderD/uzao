@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--第一种方法-->
+    <!--<item android:drawable="@drawable/shape_border_press" android:state_pressed="true" />-->
+    <!--<item android:drawable="@drawable/shape_border_nor" android:state_window_focused="false"/>-->
+
+    <!--第二种方法-->
+    <!--默认情况下是一个带圆角,白色背景,蓝色边框的矩形-->
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="#959595" />
+            <corners android:radius="@dimen/DIMEN_5DP" />
+        </shape>
+    </item>
+    <!--单击时是一个带圆角,白色背景,绿色边框的矩形-->
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="#948270" />
+            <corners android:radius="@dimen/DIMEN_5DP" />
+        </shape>
+    </item>
+</selector>

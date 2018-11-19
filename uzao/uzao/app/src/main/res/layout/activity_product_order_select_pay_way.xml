@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <!--支付宝支付-->
+    <RelativeLayout
+        android:id="@+id/pay_way_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_zfb"
+            android:gravity="center_vertical"
+            android:text="@string/pay_way_zfb"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/dividing_lines_2" />
+    <!--微信支付-->
+    <RelativeLayout
+        android:id="@+id/pay_way_wx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_wx"
+            android:gravity="center_vertical"
+            android:text="@string/pay_way_wx"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/dividing_lines_2" />
+    <!--转账汇款-->
+    <RelativeLayout
+        android:id="@+id/pay_way_remit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_remit"
+            android:gravity="center_vertical"
+            android:text="转账汇款"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_product_pay_sure"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_margin="25dp"-->
+    <!--android:background="@drawable/shape_button_yellow_radius_20"-->
+    <!--android:text="@string/go_pay"-->
+    <!--android:textColor="@color/black" />-->
+</LinearLayout>

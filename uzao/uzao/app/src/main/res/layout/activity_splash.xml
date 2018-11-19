@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_splash_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页" />
+
+        <Button
+            android:id="@+id/btn_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码" />
+
+        <Button
+            android:id="@+id/btn_zj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建主题" />
+
+        <Button
+            android:id="@+id/btn_lxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发帖" />
+
+        <Button
+            android:id="@+id/btn_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab"
+            android:text="我管理的场景" />
+
+        <Button
+            android:id="@+id/talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab"
+            android:text="新设计是列表" />
+
+        <Button
+            android:id="@+id/change_server_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="115"/>
+
+        <Button
+            android:id="@+id/change_server_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120"/>
+
+        <Button
+            android:id="@+id/change_server_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="51"/>
+    </LinearLayout>
+</FrameLayout>
+

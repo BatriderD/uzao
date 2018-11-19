@@ -1,0 +1,1 @@
+include ':app', ':sticker', ':kf5sdkModule', ':ucrop', ':matisse', ':push_4.0.0x', ':pingpp', ':zxing', ':richeditor'

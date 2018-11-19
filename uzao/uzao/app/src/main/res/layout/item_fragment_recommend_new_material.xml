@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_material_pic"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/pageBackGround" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_25DP"
+        android:layout_alignBottom="@id/iv_material_pic"
+        android:background="#1ECAA783"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingEnd="@dimen/DIMEN_15DP"
+        android:paddingStart="@dimen/DIMEN_15DP">
+
+        <TextView
+            android:id="@+id/tv_product_visited"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:drawableStart="@drawable/ic_eye"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/tab_unselected_text"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <TextView
+            android:id="@+id/tv_product_collected"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_5DP"
+            android:drawableStart="@drawable/ic_material_un_collect"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/tab_unselected_text"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_material_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_material_pic"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:layout_marginBottom="@dimen/DIMEN_10DP"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+</RelativeLayout>

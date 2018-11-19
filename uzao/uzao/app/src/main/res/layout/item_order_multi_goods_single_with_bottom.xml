@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_order_goods_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/DIMEN_12DP" />
+
+        <!--商品名-->
+        <TextView
+            android:id="@+id/tv_order_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_order_goods_image"
+            android:layout_toEndOf="@id/iv_order_goods_image"
+            android:maxLines="2"
+            android:paddingEnd="@dimen/DIMEN_12DP"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--商品规格-->
+        <TextView
+            android:id="@+id/tv_order_goods_properties"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_order_goods_image"
+            android:maxLines="2"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <!--金额-->
+        <TextView
+            android:id="@+id/tv_order_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_order_goods_image"
+            android:layout_toEndOf="@id/iv_order_goods_image"
+            android:paddingStart="@dimen/DIMEN_12DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignBottom="@id/iv_order_goods_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_horizontal">
+            <!--包裹-->
+            <TextView
+                android:id="@+id/tv_order_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/DIMEN_13SP"
+                android:textColor="@color/black"/>
+            <!--状态-->
+            <TextView
+                android:id="@+id/tv_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/DIMEN_12SP"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/item_order_multi_goods_bottom"/>
+
+    <View
+        android:id="@+id/view_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"
+        android:background="@color/separator_line" />
+</LinearLayout>

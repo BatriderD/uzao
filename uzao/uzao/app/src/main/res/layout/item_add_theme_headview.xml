@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="@dimen/DIMEN_80DP"
+        android:src="@drawable/icon_add_module"
+        android:layout_height="@dimen/DIMEN_80DP"
+        android:layout_margin="@dimen/DIMEN_12DP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_add"
+        android:text="新建主题"
+        android:textColor="@color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:layout_alignParentBottom="true"
+        android:background="@color/separator_line" />
+
+</RelativeLayout>

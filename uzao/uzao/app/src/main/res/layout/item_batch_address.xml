@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/batch_address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_batch_address_position"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="@dimen/DIMEN_10DP"
+            android:background="@drawable/shape_button_yellow"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/DIMEN_15DP"
+        android:paddingStart="15dp">
+        <!--收货人-->
+        <TextView
+            android:id="@+id/tv_batch_address_receive_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/DIMEN_6DP"
+            android:drawableStart="@drawable/address_person"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+        <!--电话-->
+        <TextView
+            android:id="@+id/tv_batch_address_receive_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="@dimen/DIMEN_6DP"
+            android:drawableStart="@drawable/address_phone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_batch_address_receive_people"
+            android:layout_marginTop="@dimen/DIMEN_8DP"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_3DP"
+                android:src="@drawable/address" />
+            <!--收货地址-->
+            <TextView
+                android:id="@+id/tv_batch_address_receive_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_6DP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--物流信息-->
+    <TextView
+        android:id="@+id/tv_batch_address_logistics"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_22DP"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:background="@drawable/shape_order_btn"
+        android:gravity="center"
+        android:paddingEnd="@dimen/DIMEN_15DP"
+        android:paddingStart="15dp"
+        android:text="物流信息"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:contentDescription="@null"
+        android:src="@drawable/address_bottom_line" />
+
+    <View
+        android:id="@+id/tv_batch_address_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_10DP"
+        android:background="@color/pageBackGround" />
+
+</LinearLayout>

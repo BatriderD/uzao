@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+    
+    <ImageView
+        android:id="@+id/iv_main_child_brand_pic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/DIMEN_3DP"
+        android:layout_marginEnd="@dimen/DIMEN_3DP"/>
+    
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_guild_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8000">
+
+    <TextView
+        android:id="@+id/iknow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_70DP"
+        android:text="我有最强大脑我不学"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <ImageView
+        android:id="@+id/btn_know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/DIMEN_37DP"
+        android:layout_toEndOf="@id/iknow"
+        android:src="@drawable/icon_guild_know" />
+
+
+    <!--底部按钮栏目-->
+    <LinearLayout
+        android:id="@+id/ll_design_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_design_bar_picture"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_pic"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_design_bar_text"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_text"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_design_bar_material"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_text"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_design_bar_catchword"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_catchword"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_design_bar_layer"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_layer"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_guild_arr"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_48DP"
+        android:layout_above="@id/ll_design_bar"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_arr"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_arr"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_arr"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_arr"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/icon_guild_arr"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_guild_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_guild_arr"
+        android:layout_marginEnd="@dimen/DIMEN_30DP"
+        android:layout_alignStart="@id/iknow"
+        android:layout_marginBottom="@dimen/DIMEN_30DP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_12SP" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_cart_tab_all_goods"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部商品"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <View
+            android:id="@+id/view_shopping_cart_tab_bottom_line_left"
+            android:layout_width="58dp"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/DIMEN_1DP"
+        android:layout_height="@dimen/DIMEN_14DP"
+        android:background="#d9d9d9" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_cart_tab_failure_goods"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="失效商品"
+            android:textColor="#676767"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <View
+            android:id="@+id/view_shopping_cart_tab_bottom_line_right"
+            android:layout_width="58dp"
+            android:layout_height="@dimen/DIMEN_1DP"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/red"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

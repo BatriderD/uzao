@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/DIMEN_10DP"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/shape_designer_and_brand_bg_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <!--品牌-->
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_3DP"
+            android:paddingEnd="@dimen/DIMEN_8DP"
+            android:paddingStart="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_3DP"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginEnd="@dimen/DIMEN_6DP"
+            android:src="@drawable/icon_designer_and_brand_right_arrow" />
+    </LinearLayout>
+
+    <!--设计师-->
+    <LinearLayout
+        android:id="@+id/ll_designer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_designer_and_brand_bg_line"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_designer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/DIMEN_3DP"
+            android:paddingEnd="@dimen/DIMEN_8DP"
+            android:paddingStart="@dimen/DIMEN_8DP"
+            android:paddingTop="@dimen/DIMEN_3DP"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="11dp"
+            android:layout_marginEnd="@dimen/DIMEN_6DP"
+            android:src="@drawable/icon_designer_and_brand_right_arrow" />
+    </LinearLayout>
+</LinearLayout>

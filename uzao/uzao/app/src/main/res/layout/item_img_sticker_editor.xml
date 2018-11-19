@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sticker_img_editor"
+    android:layout_width="match_parent"
+    android:layout_height="39dp"
+    android:background="#939393"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_design_bar_Clip"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/DIMEN_4DP"
+        android:drawableTop="@drawable/icon_clip"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="@string/bar_design_clip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+
+    <TextView
+        android:id="@+id/tv_design_bar_filter"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/DIMEN_4DP"
+        android:drawableTop="@drawable/icon_filter"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="@string/bar_filter"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+
+    <TextView
+        android:id="@+id/tv_design_bar_alph"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/DIMEN_4DP"
+        android:drawableTop="@drawable/icon_alph"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="@string/bar_design_alph"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_design_bar_fate"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/DIMEN_4DP"
+        android:drawableTop="@drawable/icon_fit"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="@string/bar_design_fit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_design_bar_fill"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/DIMEN_4DP"
+        android:drawableTop="@drawable/icon_full"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="@string/bar_design_full"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+
+</LinearLayout>

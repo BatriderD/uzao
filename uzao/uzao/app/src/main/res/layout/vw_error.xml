@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <ImageView
+        android:id="@+id/error_retry_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_state_error"
+        android:layout_marginTop="@dimen/status_image_margin_top"/>
+
+    <TextView
+        android:id="@+id/error_view_tv"
+        style="@style/MultipleStatusView.Content"
+        android:text="@string/no_network_view_hint" />
+
+    <TextView
+        android:id="@+id/error_view_btn"
+        style="@style/MultipleStatusBtn"
+        android:text="@string/net_error_retry"
+        android:visibility="visible" />
+
+</LinearLayout>

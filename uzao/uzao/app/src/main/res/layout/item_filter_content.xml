@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.zhaotai.uzao.view.RoundImageView
+        android:id="@+id/iv_filter_content"
+        android:layout_width="@dimen/DIMEN_50DP"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginEnd="2.5dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="2.5dp"
+        app:myRadius="@dimen/DIMEN_5DP"
+        app:type="round" />
+
+
+    <TextView
+        android:id="@+id/tv_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="12"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_13SP" />
+</LinearLayout>

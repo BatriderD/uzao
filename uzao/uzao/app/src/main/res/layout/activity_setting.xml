@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_login_white" />
+
+        <!--消息推送-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:layout_marginTop="@dimen/DIMEN_14DP"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/message_push"
+                android:textColor="@color/setting_text_key"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <Switch
+                android:id="@+id/swh_setting_push"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_15DP" />
+        </RelativeLayout>
+
+        <!--密码修改-->
+        <TextView
+            android:id="@+id/tv_modify_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:layout_marginTop="@dimen/DIMEN_15DP"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:text="@string/modify_password"
+            android:textColor="@color/setting_text_key"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--意见反馈-->
+        <TextView
+            android:id="@+id/tv_feed_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:text="@string/feedback"
+            android:textColor="@color/setting_text_key"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <!--分享app-->
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:layout_marginTop="@dimen/DIMEN_15DP"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:text="@string/share_app"
+            android:textColor="@color/setting_text_key"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--消除缓存-->
+
+
+        <RelativeLayout
+            android:id="@+id/clean_cache"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/ripple_one_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/clean_cache"
+                android:textColor="@color/setting_text_key"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_setting_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_36DP"
+                android:textColor="@color/setting_text_value"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_15DP"
+                android:gravity="center_vertical"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--关于-->
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:background="@drawable/ripple_one_item_bg"
+            android:clickable="true"
+            android:drawableEnd="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/DIMEN_15DP"
+            android:paddingStart="@dimen/DIMEN_15DP"
+            android:text="@string/about_us"
+            android:textColor="@color/setting_text_key"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+        <!--当前版本号-->
+        <RelativeLayout
+            android:id="@+id/rl_setting_check_version"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/DIMEN_15DP"
+                android:text="@string/current_version"
+                android:textColor="@color/setting_text_key"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <TextView
+                android:id="@+id/tv_setting_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/DIMEN_36DP"
+                android:textColor="@color/setting_text_value"
+                android:textSize="@dimen/DIMEN_14SP" />
+        </RelativeLayout>
+
+        <!--切换服务器-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:background="@color/separator_line" />
+
+        <TextView
+            android:id="@+id/tv_setting_server"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:text="切换服务器"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"/>
+
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_50DP"
+            android:layout_marginTop="@dimen/DIMEN_25DP"
+            android:background="@drawable/ripple_one_item_bg"
+            android:gravity="center"
+            android:text="@string/exit_login"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/api"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null" />
+    </LinearLayout>
+</ScrollView>

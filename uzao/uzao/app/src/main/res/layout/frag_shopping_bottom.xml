@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shopping_cart_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+    <!--全选-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_check_all"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_circle_unselected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+    <!--结算界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_shopping_cart_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/DIMEN_20DP"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <!--合计金额-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_account"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/DIMEN_13SP" />
+
+                    <TextView
+                        android:id="@+id/final_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/DIMEN_13SP" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--总额-->
+                    <TextView
+                        android:id="@+id/total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_11SP" />
+                    <!--已减-->
+                    <TextView
+                        android:id="@+id/cut_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/DIMEN_4DP"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_11SP" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#d9d9d9" />
+
+            <!--结算-->
+            <Button
+                android:id="@+id/shopping_cart_account"
+                android:layout_width="@dimen/DIMEN_100DP"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:text="@string/close_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_16SP" />
+        </LinearLayout>
+        <!--删除页面-->
+        <LinearLayout
+            android:id="@+id/ll_shopping_cart_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <!--删除-->
+            <TextView
+                android:id="@+id/btn_shopping_cart_delete"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/DIMEN_30DP"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_16SP" />
+            <!--移到收藏夹-->
+            <Button
+                android:id="@+id/btn_shopping_cart_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:paddingEnd="20dp"
+                android:paddingStart="@dimen/DIMEN_20DP"
+                android:text="@string/move_collect"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_16SP" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

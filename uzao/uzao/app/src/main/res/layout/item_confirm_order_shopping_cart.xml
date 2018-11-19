@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/shopping_cart_spu_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="12dp" />
+
+        <LinearLayout
+            android:id="@+id/llGoodInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/shopping_cart_spu_image"
+            android:orientation="vertical">
+            <!--商品名-->
+            <TextView
+                android:id="@+id/shopping_cart_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <!--商品规格-->
+            <TextView
+                android:id="@+id/shopping_cart_spu_properties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:textColor="@color/grey"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--金额-->
+                <TextView
+                    android:id="@+id/shopping_cart_spu_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="12dp"
+                    android:textColor="@color/coral_blue" />
+
+                <!--数量-->
+                <TextView
+                    android:id="@+id/shopping_cart_spu_num"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/goods_number"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="12dp"
+                    android:background="#d9d9d9" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

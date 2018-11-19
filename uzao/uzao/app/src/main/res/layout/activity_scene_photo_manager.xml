@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <include
+        layout="@layout/view_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_photo_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_photo_editor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/DIMEN_12DP"
+                    android:drawableStart="@drawable/ic_editor_photo"
+                    android:gravity="center"
+                    android:text="编辑相册"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="@dimen/DIMEN_1PX"
+                android:layout_height="match_parent"
+                android:background="@color/cB3B3B3" />
+
+            <RelativeLayout
+                android:id="@+id/rl_photo_manager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:drawablePadding="@dimen/DIMEN_12DP"
+                    android:drawableStart="@drawable/icon_mananager_photo"
+                    android:gravity="center"
+                    android:text="管理相册"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_photo_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_photo_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/white"
+                android:drawablePadding="@dimen/DIMEN_14DP"
+                android:drawableStart="@drawable/my_track_icon_selector"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/DIMEN_13DP"
+                android:paddingStart="@dimen/DIMEN_13DP"
+                android:text="全选"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_photo_del"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/del"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_15SP" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/cB3B3B3" />
+    </FrameLayout>
+</LinearLayout>

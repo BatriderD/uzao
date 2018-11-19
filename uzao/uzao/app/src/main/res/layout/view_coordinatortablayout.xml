@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:stateListAnimator="@drawable/appbarlayout_elevated"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:minHeight="@dimen/tool_bar_size"
+                app:layout_collapseMode="pin"
+                app:titleMarginTop="15dp"
+                app:contentInsetStart="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/DIMEN_12DP"
+                        android:paddingTop="@dimen/DIMEN_25DP"
+                        android:paddingBottom="8dp"
+                        android:paddingStart="12dp"
+                        android:src="@drawable/back" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/DIMEN_25DP"
+                        android:text="个人主页" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/DIMEN_12DP">
+
+                        <ImageView
+                            android:id="@+id/iv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/DIMEN_10DP"
+                            android:paddingStart="@dimen/DIMEN_5DP"
+                            android:paddingTop="@dimen/DIMEN_25DP"
+                            android:src="@drawable/ic_white_share"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/DIMEN_5DP"
+                            android:paddingStart="@dimen/DIMEN_5DP"
+                            android:paddingTop="@dimen/DIMEN_25DP"
+                            android:src="@drawable/icon_search_white" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                style="@style/TabLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_size"
+                android:layout_gravity="bottom" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

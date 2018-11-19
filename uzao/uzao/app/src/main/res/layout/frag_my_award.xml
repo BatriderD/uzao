@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:background="@drawable/bg_invite_half_circle"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--累计-->
+            <LinearLayout
+                android:layout_width="@dimen/DIMEN_0DP"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_grand_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CAA783"
+                    android:textSize="@dimen/DIMEN_26SP" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_5DP"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="累计"
+                        android:textColor="#9a9a9a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/DIMEN_3DP"
+                        android:includeFontPadding="false"
+                        android:text="(元)"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/DIMEN_10SP" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/DIMEN_1DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:background="#d9d9d9" />
+
+            <!--结算-->
+            <LinearLayout
+                android:layout_width="@dimen/DIMEN_0DP"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_close_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#CAA783"
+                    android:textSize="@dimen/DIMEN_26SP" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_5DP"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="结算"
+                        android:textColor="#9a9a9a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/DIMEN_3DP"
+                        android:includeFontPadding="false"
+                        android:text="(元)"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/DIMEN_10SP" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/DIMEN_1DP"
+                android:layout_height="@dimen/DIMEN_30DP"
+                android:background="#d9d9d9" />
+
+            <!--可兑换-->
+            <LinearLayout
+                android:layout_width="@dimen/DIMEN_0DP"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#CAA783"
+                    android:textSize="@dimen/DIMEN_26SP" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/DIMEN_5DP"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="可兑现"
+                        android:textColor="#9a9a9a"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/DIMEN_3DP"
+                        android:includeFontPadding="false"
+                        android:text="(元)"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/DIMEN_10SP" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:text="兑现"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--兑换规则-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="兑换规则" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="fhudisfhdsuidjioas" />
+</LinearLayout>

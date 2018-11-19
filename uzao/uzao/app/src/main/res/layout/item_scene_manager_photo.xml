@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_photo_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100DP"
+        android:layout_marginTop="@dimen/DIMEN_5DP" />
+
+    <TextView
+        android:id="@+id/tv_photo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_photo_head"
+        android:layout_marginBottom="@dimen/DIMEN_5DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP"
+        tools:text="美好的一天" />
+
+    <TextView
+        android:id="@+id/tv_photo_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_photo_name"
+        android:layout_marginStart="@dimen/DIMEN_5DP"
+        android:layout_toEndOf="@id/tv_photo_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_11SP"
+        android:paddingBottom="@dimen/DIMEN_3PX"
+        tools:text="(10)" />
+
+    <ImageView
+        android:id="@+id/iv_photo_del"
+        android:layout_width="@dimen/DIMEN_20DP"
+        android:layout_height="@dimen/DIMEN_20DP"
+        android:layout_alignBottom="@id/tv_photo_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_10DP"
+        android:src="@drawable/icon_del_photo" />
+
+</RelativeLayout>

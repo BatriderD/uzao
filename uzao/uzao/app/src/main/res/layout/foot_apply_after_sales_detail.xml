@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/tv_apply_after_sales_detail_reject_divider"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/pageBackGround" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:text="@string/after_sales_reject"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_apply_after_sales_detail_reject_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:paddingBottom="@dimen/DIMEN_15DP"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_11SP" />
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_login_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/separator_line" />
+
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_discuss_head_photo"
+                    android:layout_width="@dimen/DIMEN_36DP"
+                    android:layout_height="@dimen/DIMEN_36DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:layout_marginTop="@dimen/DIMEN_12DP" />
+
+                <TextView
+                    android:id="@+id/tv_discuss_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_discuss_head_photo"
+                    android:layout_marginStart="@dimen/DIMEN_16DP"
+                    android:layout_toEndOf="@id/iv_discuss_head_photo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_15SP" />
+
+                <TextView
+                    android:id="@+id/tv_discuss_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tab_unselected_text"
+                    android:textSize="@dimen/DIMEN_10SP"
+                    android:layout_above="@+id/tv_discuss_content"
+                    android:layout_alignStart="@+id/tv_discuss_nick_name" />
+
+
+                <TextView
+                    android:id="@+id/tv_discuss_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_discuss_head_photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/DIMEN_14DP"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/DIMEN_14SP" />
+
+                <TextView
+                    android:id="@+id/tv_discuss_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_discuss_content"
+                    android:layout_marginStart="@dimen/DIMEN_13DP"
+                    android:layout_marginTop="@dimen/DIMEN_14DP"
+                    android:drawableLeft="@drawable/icon_like_selector"
+                    android:drawablePadding="@dimen/DIMEN_9DP"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/DIMEN_5DP"
+                    android:textColor="@color/selector_text_yello_gray"
+                    android:textSize="@dimen/DIMEN_12SP" />
+
+                <ImageView
+                    android:id="@+id/iv_discuss_to_talk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_discuss_like"
+                    android:layout_marginLeft="105dp"
+                    android:padding="@dimen/DIMEN_5DP"
+                    android:src="@drawable/icon_comment" />
+
+                <TextView
+                    android:id="@+id/tv_discuss_to_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/iv_discuss_to_talk"
+                    android:layout_alignTop="@+id/tv_discuss_like"
+                    android:layout_marginStart="30dp"
+                    android:text="查看详情"
+                    android:textSize="@dimen/DIMEN_14SP"
+                    android:textColor="#CAA783"
+                    android:padding="@dimen/DIMEN_5DP" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_1PX"
+                    android:layout_below="@id/tv_discuss_content"
+                    android:layout_marginEnd="@dimen/DIMEN_12DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:layout_marginTop="@dimen/DIMEN_51DP"
+                    android:background="@color/separator_line" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_comment_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/DIMEN_10DP"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:layout_marginTop="@dimen/DIMEN_30DP"
+                    android:text="评论了我的评论" />
+
+                <TextView
+                    android:id="@+id/tv_comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/DIMEN_17DP"
+                    android:layout_marginEnd="14dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:textSize="13sp"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:text="评论了我的评论评论了我的评论评论了我的评论评论了我的评论" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_comment_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/DIMEN_10DP"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:layout_marginTop="@dimen/DIMEN_30DP"
+                    android:text="评论了我的素材" />
+
+                <ImageView
+                    android:id="@+id/iv_material_pic"
+                    android:layout_width="@dimen/DIMEN_75DP"
+                    android:layout_height="@dimen/DIMEN_75DP"
+                    android:layout_marginBottom="@dimen/DIMEN_17DP"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_51DP"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <include layout="@layout/item_separation_line" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/publish"
+                android:textColor="@color/black_produce"
+                android:textSize="@dimen/DIMEN_15SP" />
+
+            <EditText
+                android:id="@+id/et_talk_word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/DIMEN_10DP"
+                android:layout_marginStart="@dimen/DIMEN_12DP"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:layout_toStartOf="@id/tv_publish"
+                android:background="@drawable/bg_dialog_right_white"
+                android:gravity="center_vertical"
+                android:maxLength="500"
+                android:hint="添加评论"
+                android:paddingStart="@dimen/DIMEN_11SP"
+                android:textColor="@color/black_produce"
+                android:textColorHint="@color/black_produce"
+                android:textSize="@dimen/DIMEN_15SP" />
+
+
+        </RelativeLayout>
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+
+
+</LinearLayout>

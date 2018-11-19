@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/receive_people1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_address_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:background="@color/pageBackGround" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_address_modify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:background="@color/pageBackGround" />
+
+    <LinearLayout
+        android:id="@+id/modify_address_ll_city"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/place"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="5dp"-->
+            <!--android:gravity="end"-->
+            <!--android:orientation="vertical">-->
+
+            <!---->
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/modify_address_city"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:background="@color/pageBackGround" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <EditText
+            android:id="@+id/modify_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请填写地址详情"
+            android:maxLength="50"
+            android:maxEms="300"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/pageBackGround" />
+
+        <TextView
+            android:id="@+id/tv_default"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/my_track_icon_selector"
+            android:gravity="center_vertical"
+            android:text="@string/set_default_address"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

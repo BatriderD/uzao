@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/DIMEN_10DP"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:text="温馨提示"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_45DP"
+        android:src="@drawable/icon_select_way" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_41DP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/DIMEN_23DP"
+        android:layout_marginStart="@dimen/DIMEN_23DP"
+        android:background="@drawable/bg_dialog_left_white"
+        android:gravity="center"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_41DP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_21DP"
+        android:layout_marginEnd="@dimen/DIMEN_23DP"
+        android:layout_marginStart="@dimen/DIMEN_23DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:background="@drawable/bg_dialog_right_white"
+        android:gravity="center"
+        android:text="上架到商城"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</LinearLayout>

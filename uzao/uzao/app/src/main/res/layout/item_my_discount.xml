@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_discount_bg"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginEnd="@dimen/DIMEN_12DP"
+    android:layout_marginStart="@dimen/DIMEN_12DP"
+    android:layout_marginTop="@dimen/DIMEN_10DP"
+    app:cardCornerRadius="@dimen/DIMEN_5DP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_coupon_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_coupon">
+
+                <TextView
+                    android:id="@+id/tv_discount_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/DIMEN_8DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_12SP" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+                    <!--优惠券金额-->
+                    <TextView
+                        android:id="@+id/tv_coupon_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                    <!--满多少可使用-->
+                    <TextView
+                        android:id="@+id/tv_coupon_full_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/DIMEN_12SP" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/DIMEN_8DP"
+                    android:layout_marginTop="@dimen/DIMEN_10DP"
+                    android:textColor="#66000000"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-1dp"
+                    android:src="@drawable/bg_coupon_half_circle" />
+
+                <ImageView
+                    android:id="@+id/iv_coupons_stamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/DIMEN_8DP"
+                    android:layout_marginEnd="@dimen/DIMEN_47DP" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/DIMEN_10DP">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期至:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_12SP" />
+            <!--有效期时间-->
+            <TextView
+                android:id="@+id/tv_coupon_bottom_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/DIMEN_10DP"
+                android:layout_weight="1"
+                android:textColor="#686868"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_coupon_bottom_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingEnd="@dimen/DIMEN_10DP"
+                android:paddingStart="@dimen/DIMEN_12DP"
+                android:textColor="#686868"
+                android:textSize="@dimen/DIMEN_12SP" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

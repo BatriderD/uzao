@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_45DP"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <!--全部-->
+        <RelativeLayout
+            android:id="@+id/rl_comment_tab_left"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableEnd="@drawable/ic_acc_down"
+                android:drawablePadding="@dimen/DIMEN_3DP"
+                android:text="全部"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <View
+                android:id="@+id/view_comment_tab_left_line"
+                android:layout_width="@dimen/DIMEN_50DP"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/red" />
+        </RelativeLayout>
+        <!--有图-->
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_comment_tab_right_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="有图"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <View
+                android:id="@+id/view_comment_tab_right_line"
+                android:layout_width="@dimen/DIMEN_50DP"
+                android:layout_height="@dimen/DIMEN_1DP"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/separator_line" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe"
+            style="@style/Refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_46DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+        <!--重新选择支付方式-->
+        <TextView
+            android:id="@+id/tv_product_order_bottom_reselect"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP"
+            android:visibility="gone" />
+
+        <!--第一个按钮-->
+        <TextView
+            android:id="@+id/tv_product_order_bottom_first_button"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--第二个按钮-->
+        <TextView
+            android:id="@+id/tv_product_order_bottom_second_button"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--第三个按钮-->
+        <TextView
+            android:id="@+id/tv_product_order_bottom_third_button"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_marginEnd="@dimen/DIMEN_15DP"
+            android:background="@drawable/shape_order_btn_yellow"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+</LinearLayout>

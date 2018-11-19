@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_5DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:background="@drawable/shape_bg_tag_grey"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_12SP" />
+</FrameLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pageBackGround"
+        android:orientation="vertical">
+        <!--标题栏 搜索-->
+        <include layout="@layout/toolbar_search" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--历史搜索-->
+            <LinearLayout
+                android:id="@+id/ll_search_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="@dimen/DIMEN_12DP"
+                        android:text="@string/history_search"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_delete_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/DIMEN_12DP"
+                        android:paddingStart="@dimen/DIMEN_12DP"
+                        android:src="@drawable/delete" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginEnd="@dimen/DIMEN_12DP"
+                    android:layout_marginStart="@dimen/DIMEN_12DP"
+                    android:background="#d9d9d9" />
+
+                <com.zhy.view.flowlayout.TagFlowLayout
+                    android:id="@+id/id_flowlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    app:max_select="1" />
+
+            </LinearLayout>
+
+            <!--联想-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_relate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <!--结果页-->
+            <LinearLayout
+                android:id="@+id/ll_product_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/DIMEN_1DP"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.zhaotai.uzao.widget.MultipleStatusView
+                    android:id="@+id/multiple_status_view"
+                    style="@style/MultipleStatusViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!--tab栏-->
+                        <com.flyco.tablayout.CommonTabLayout
+                            android:id="@+id/tl_main_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/DIMEN_45DP"
+                            android:background="@color/white"
+                            app:tl_indicator_color="@color/red"
+                            app:tl_indicator_width="@dimen/DIMEN_50DP"
+                            app:tl_textSelectColor="@color/black"
+                            app:tl_textUnselectColor="@color/grey" />
+
+                        <!--商品筛选-->
+                        <include layout="@layout/tab_product" />
+                        <!--素材筛选-->
+                        <include layout="@layout/tab_material_search" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rl_product_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/DIMEN_5DP" />
+                    </LinearLayout>
+                </com.zhaotai.uzao.widget.MultipleStatusView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_filter_drawer"
+        android:layout_width="280dp"
+        android:layout_gravity="end"
+        android:layout_height="match_parent" />
+</android.support.v4.widget.DrawerLayout>

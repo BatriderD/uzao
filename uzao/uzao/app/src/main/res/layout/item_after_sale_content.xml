@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_product_image"
+        android:layout_width="@dimen/DIMEN_85DP"
+        android:layout_height="@dimen/DIMEN_85DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:layout_marginEnd="@dimen/DIMEN_20DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/tv_product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_product_image"
+        android:layout_marginEnd="@dimen/DIMEN_18DP"
+        android:layout_toEndOf="@id/iv_product_image"
+        android:lines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_product_title"
+        android:layout_marginEnd="@dimen/DIMEN_18DP"
+        android:layout_marginTop="@dimen/DIMEN_9DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_product_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_product_count"
+        android:layout_alignStart="@id/tv_product_title"
+        android:layout_toStartOf="@id/tv_product_count"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_product_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_product_image"
+        android:layout_toEndOf="@id/iv_product_image"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+</RelativeLayout>

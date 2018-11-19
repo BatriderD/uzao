@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pageBackGround"
+    android:gravity="center_horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/empty_retry_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_state_empty_shopping_cart"
+            android:layout_marginTop="@dimen/status_image_margin_top"/>
+
+        <TextView
+            android:id="@+id/empty_view_tv"
+            style="@style/MultipleStatusView.Content"
+            android:text="没有失效商品哦" />
+
+        <TextView
+            android:id="@+id/empty_view_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/DIMEN_14SP"
+            android:textColor="@color/white"
+            android:paddingStart="16dp"
+            android:paddingEnd="@dimen/DIMEN_16DP"
+            android:paddingBottom="@dimen/DIMEN_7DP"
+            android:paddingTop="@dimen/DIMEN_7DP"
+            android:text="去逛逛"
+            android:background="@drawable/shape_order_btn_yellow"
+            android:layout_marginTop="@dimen/DIMEN_15DP"/>
+</LinearLayout>

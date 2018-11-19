@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_one_item_bg">
+
+    <ImageView
+        android:id="@+id/iv_message_center_icon"
+        android:layout_width="@dimen/DIMEN_50DP"
+        android:layout_height="@dimen/DIMEN_50DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_15DP" />
+
+    <ImageView
+        android:id="@+id/iv_message_center_mark"
+        android:layout_width="@dimen/DIMEN_20DP"
+        android:layout_height="@dimen/DIMEN_20DP"
+        android:layout_marginLeft="@dimen/DIMEN_52DP"
+        android:layout_marginTop="@dimen/DIMEN_6DP" />
+
+
+    <TextView
+        android:id="@+id/tv_message_center_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_22DP"
+        android:layout_toRightOf="@id/iv_message_center_icon"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_message_center_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_message_center_title"
+        android:layout_marginRight="@dimen/DIMEN_21DP"
+        android:layout_marginTop="@dimen/DIMEN_45DP"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_message_center_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_23DP"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_10DP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_below="@id/iv_message_center_icon"
+        android:layout_marginLeft="@dimen/DIMEN_80DP"
+        android:background="@color/separator_line" />
+
+</RelativeLayout>

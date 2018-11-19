@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_login_white" />
+
+
+    <TextView
+        android:id="@+id/tv_register2_show_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_46DP"
+        android:textColor="@color/login_title_text"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <!--验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_42DP">
+
+
+        <EditText
+            android:id="@+id/et_register2_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_bar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_19DP"
+            android:layout_marginRight="@dimen/DIMEN_19DP"
+            android:background="@null"
+            android:hint="@string/verification_code"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:textColor="@color/login_text_value"
+            android:textColorHint="@color/login_text_value_hint"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_register2_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/DIMEN_19DP"
+            android:background="@drawable/selector_shape_bg_count_down"
+            android:paddingBottom="@dimen/DIMEN_6DP"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_8DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_below="@id/et_register2_verification_code"
+            android:layout_marginLeft="@dimen/DIMEN_15DP"
+            android:layout_marginRight="@dimen/DIMEN_15DP"
+            android:layout_marginTop="@dimen/DIMEN_9DP"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+    <!--密码-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/DIMEN_61DP"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <EditText
+        android:id="@+id/et_register2_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_19DP"
+        android:layout_marginRight="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:background="@null"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_10DP"
+        android:textColor="@color/login_text_value"
+        android:textColorHint="@color/login_text_value_hint"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+
+    <EditText
+        android:id="@+id/et_register2_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_19DP"
+        android:layout_marginRight="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:background="@null"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_10DP"
+        android:textColor="@color/login_text_value"
+        android:textColorHint="@color/login_text_value_hint"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_39DP"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_50DP"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+    <TextView
+        android:id="@+id/tv_register2_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/DIMEN_11SP" />
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sticker_strengthen_editor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_tool_shadow" />
+
+    <com.zhaotai.uzao.widget.MyMoveAbleSeekBar
+        android:id="@+id/sb_strengthen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_15DP"
+        android:max="255"
+        android:maxHeight="2px"
+        android:progress="127"
+        android:progressDrawable="@color/grey"
+        android:thumb="@drawable/ic_strengthen_thumb" />
+
+    <LinearLayout
+        android:id="@+id/ll_strengthen_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_5DP">
+
+
+        <TextView
+            android:id="@+id/tv_strengthen_artwork"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_artwork_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_artwork"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_brightness"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_brightness_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_brightness"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_contrast"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_contrast_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_contrast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_saturation"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_saturation_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_saturation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

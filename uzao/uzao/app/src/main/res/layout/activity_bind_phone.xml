@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_login_white" />
+
+
+    <!--密码-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/DIMEN_61DP"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <EditText
+        android:id="@+id/et_bind_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/DIMEN_19DP"
+        android:layout_marginRight="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_18DP"
+        android:background="@null"
+        android:hint="手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_10DP"
+        android:textColor="@color/login_text_value"
+        android:textColorHint="@color/login_text_value_hint"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+
+    <!--验证码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/et_bind_phone_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_19DP"
+            android:layout_marginRight="@dimen/DIMEN_19DP"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="验证码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:textColor="@color/login_text_value"
+            android:textColorHint="@color/login_text_value_hint"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/tv_bind_phone_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_19DP"
+            android:background="@drawable/selector_shape_bg_count_down"
+            android:paddingBottom="@dimen/DIMEN_6DP"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:paddingTop="@dimen/DIMEN_8DP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_below="@id/et_bind_phone_verification_code"
+            android:layout_marginLeft="@dimen/DIMEN_15DP"
+            android:layout_marginRight="@dimen/DIMEN_15DP"
+            android:layout_marginTop="@dimen/DIMEN_9DP"
+            android:background="@color/separator_line" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_50DP"
+        android:background="@drawable/shape_btn_bg"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+</LinearLayout>

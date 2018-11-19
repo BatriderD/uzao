@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:stateListAnimator="@drawable/appbarlayout_elevated"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+
+            <include
+                layout="@layout/layout_scene_manage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tool_bar_size"
+                android:gravity="center"
+                android:minHeight="@dimen/tool_bar_size"
+                app:layout_collapseMode="pin"
+                app:titleMarginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/DIMEN_10DP"
+                        android:src="@drawable/back_black" />
+
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:text="@string/scene_manage"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/DIMEN_16SP" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tabLayout"
+            style="@style/TabLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_size"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            app:tabTextColor="@color/black"
+            app:tl_indicator_color="@color/red"
+            app:tl_indicator_height="1dp"
+            app:tl_indicator_width_equal_title="true"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/black"
+            app:tl_textUnselectColor="#666666" />
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

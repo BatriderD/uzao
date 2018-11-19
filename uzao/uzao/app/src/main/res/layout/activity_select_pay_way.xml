@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+
+    <!--支付宝支付-->
+    <RelativeLayout
+        android:id="@+id/pay_way_zfb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/zfb"
+            android:gravity="center_vertical"
+            android:text="@string/pay_way_zfb"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/pay_way_zfb_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/correct" />
+    </RelativeLayout>
+
+    <!--微信支付-->
+    <RelativeLayout
+        android:id="@+id/pay_way_wx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/wx"
+            android:gravity="center_vertical"
+            android:text="@string/pay_way_wx"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/pay_way_wx_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/correct" />
+    </RelativeLayout>
+</LinearLayout>

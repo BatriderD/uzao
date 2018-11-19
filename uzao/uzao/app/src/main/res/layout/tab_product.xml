@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_tab_product"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <!--综合排序-->
+    <TextView
+        android:id="@+id/tv_product_tab_sort_comprehensive"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/comprehensive_ranking"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <!--价格-->
+    <RelativeLayout
+        android:id="@+id/rl_product_tab_sort_price"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_tab_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <ImageView
+                android:id="@+id/iv_product_tab_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_price_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--销量-->
+    <RelativeLayout
+        android:id="@+id/rl_product_tab_sort_count"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_product_tab_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销量"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_14SP" />
+
+            <ImageView
+                android:id="@+id/iv_product_tab_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_price_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--筛选-->
+    <RelativeLayout
+        android:id="@+id/rl_product_tab_sort_filter"
+        android:layout_width="@dimen/DIMEN_0DP"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/ic_filter"
+            android:drawablePadding="@dimen/DIMEN_2DP"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+    </RelativeLayout>
+</LinearLayout>

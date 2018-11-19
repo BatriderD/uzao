@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_guess_you_like_title"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/tv_guess_your_like_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingEnd="@dimen/DIMEN_13DP"
+        android:paddingStart="@dimen/DIMEN_13DP"
+        android:text="@string/guess_you_like"
+        android:textColor="#D30000"
+        android:textSize="@dimen/DIMEN_14SP" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/tv_guess_your_like_title"
+        android:src="@drawable/ic_guess_you_like_circle" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tv_guess_your_like_title"
+        android:src="@drawable/ic_guess_you_like_circle" />
+</RelativeLayout>

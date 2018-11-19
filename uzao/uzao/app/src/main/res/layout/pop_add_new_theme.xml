@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/DIMEN_10DP"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:text="新建主题"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/ed_add_theme_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_41DP"
+        android:layout_marginBottom="@dimen/DIMEN_28DP"
+        android:layout_marginEnd="@dimen/DIMEN_20DP"
+        android:layout_marginStart="@dimen/DIMEN_20DP"
+        android:layout_marginTop="@dimen/DIMEN_28DP"
+        android:background="@drawable/shape_bg_add_theme_name"
+        android:hint="请输入主题名称"
+        android:paddingEnd="@dimen/DIMEN_10DP"
+        android:singleLine="true"
+        android:paddingStart="@dimen/DIMEN_10DP"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="158dp"
+        android:layout_height="@dimen/DIMEN_41DP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+        android:layout_marginEnd="@dimen/DIMEN_92DP"
+        android:layout_marginStart="@dimen/DIMEN_92DP"
+        android:background="@drawable/bg_dialog_left_white"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+</LinearLayout>

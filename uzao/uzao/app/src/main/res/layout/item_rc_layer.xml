@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="@dimen/DIMEN_3DP"
+    android:layout_marginTop="@dimen/DIMEN_3DP"
+    android:layout_marginEnd="@dimen/DIMEN_5DP"
+    android:layout_marginStart="@dimen/DIMEN_5DP"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_layer_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_layer_trans"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/ll_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_25DP"
+        android:layout_alignParentBottom="true"
+        android:background="#cc000000">
+
+
+        <ImageView
+            android:id="@+id/iv_hide_layer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/DIMEN_3DP"
+            android:src="@drawable/item_layer_visible_selector" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_1DP"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/DIMEN_7DP"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_del_layer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/DIMEN_3DP"
+            android:src="@drawable/icon_del_layer" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_layer_locker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0000000"
+        android:scaleType="center"
+        android:src="@drawable/icon_layer_locker" />
+</RelativeLayout>

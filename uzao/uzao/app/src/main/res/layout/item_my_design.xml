@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_design_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:scaleType="centerInside" />
+
+        <LinearLayout
+            android:id="@+id/ll_my_design_select"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="end"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_my_design_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_10DP"
+                android:layout_marginTop="@dimen/DIMEN_10DP"
+                android:src="@drawable/icon_circle_unselected" />
+        </LinearLayout>
+    </FrameLayout>
+    <!--设计名称-->
+    <TextView
+        android:id="@+id/tv_design_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_3DP"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_14SP" />
+    <!--编辑日期-->
+    <TextView
+        android:id="@+id/tv_design_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_3DP"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <!--编辑-->
+    <TextView
+        android:id="@+id/tv_to_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="@dimen/DIMEN_3DP"
+        android:layout_marginStart="@dimen/DIMEN_3DP"
+        android:background="@drawable/shape_button_line_circle_red"
+        android:gravity="center"
+        android:paddingBottom="@dimen/DIMEN_3DP"
+        android:paddingTop="3dp"
+        android:text="编辑"
+        android:textColor="@color/red"
+        android:textSize="@dimen/DIMEN_12SP" />
+</LinearLayout>

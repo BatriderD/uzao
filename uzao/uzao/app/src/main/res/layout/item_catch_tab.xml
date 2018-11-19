@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/tv_tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="@dimen/DIMEN_2DP"
+        android:layout_centerHorizontal="true"
+        android:text="文化"
+        android:gravity="center"
+        android:textColor="@color/selector_art_font_text"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <View
+        android:id="@+id/v_tabL_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignEnd="@id/tv_tab_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/tv_tab_name"
+        android:background="@color/red" />
+
+    <View
+        android:layout_width="@dimen/DIMEN_1DP"
+        android:layout_height="@dimen/DIMEN_9DP"
+        android:layout_alignTop="@id/tv_tab_name"
+        android:layout_marginTop="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DIMEN_1DP"
+        android:background="@color/separator_line" />
+
+</RelativeLayout>

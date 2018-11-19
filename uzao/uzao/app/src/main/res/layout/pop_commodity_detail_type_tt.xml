@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8f000000">
+
+        <LinearLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/DIMEN_15DP">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--商品图片-->
+                <ImageView
+                    android:id="@+id/detail_type_img"
+                    android:layout_width="91dp"
+                    android:layout_height="87dp"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--价格-->
+                    <TextView
+                        android:id="@+id/detail_type_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="131dp"
+                        android:textColor="@color/coral_blue"
+                        android:textSize="14sp" />
+                    <!--请选择规格属性-->
+                    <TextView
+                        android:id="@+id/detail_type_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="131dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/please_choose_type"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <!--关闭-->
+                <ImageView
+                    android:id="@+id/detail_type_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pop_goods_detail_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_10DP" />
+
+            <!--确定按钮-->
+            <Button
+                android:id="@+id/detail_type_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button_selected"
+                android:text="@string/sure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DIMEN_16SP" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

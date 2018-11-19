@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_spu_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white">
+    <!--android:layout_marginBottom="@dimen/DIMEN_5DP"-->
+    <!--android:layout_marginEnd="@dimen/DIMEN_2DP"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp">
+
+
+            <!--商品图片-->
+            <ImageView
+                android:id="@+id/collection_spu_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--失效蒙层-->
+            <FrameLayout
+                android:id="@+id/view_failure_mask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#33000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_failure" />
+            </FrameLayout>
+        </FrameLayout>
+        <!--商品名-->
+        <TextView
+            android:id="@+id/collection_spu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_7DP"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--简介-->
+        <TextView
+            android:id="@+id/tv_collect_product_produce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/DIMEN_10DP"
+            android:paddingStart="@dimen/DIMEN_10DP"
+            android:textColor="@color/black_produce"
+            android:textSize="@dimen/DIMEN_9SP" />
+
+        <!--标签-->
+        <include layout="@layout/include_spu_tag"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/DIMEN_6DP"
+            android:layout_marginStart="@dimen/DIMEN_8DP"
+            android:layout_marginTop="@dimen/DIMEN_6DP"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <!--降价图标-->
+            <ImageView
+                android:id="@+id/iv_collect_product_cut_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/DIMEN_4DP"
+                android:src="@drawable/icon_cut_price" />
+            <!--价格-->
+            <LinearLayout
+                android:id="@+id/ll_collect_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-2dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_collect_product_price_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="¥"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/DIMEN_9SP" />
+
+                <TextView
+                    android:id="@+id/tv_collect_product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/DIMEN_15SP" />
+            </LinearLayout>
+
+            <!--原价-->
+            <TextView
+                android:id="@+id/tv_collect_product_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="#4c4c4c"
+                android:textSize="@dimen/DIMEN_9SP" />
+
+
+            <!--相似商品-->
+            <LinearLayout
+                android:id="@+id/fl_collect_product_similar_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="21dp"
+                    android:layout_marginEnd="@dimen/DIMEN_10DP"
+                    android:layout_marginStart="@dimen/DIMEN_10DP"
+                    android:background="@drawable/shape_button_line_circle_red"
+                    android:gravity="center"
+                    android:text="相似商品"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/DIMEN_12SP" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--删除勾选-->
+    <LinearLayout
+        android:id="@+id/btn_collect_product_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_collect_product_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/DIMEN_10DP"
+            android:layout_marginTop="@dimen/DIMEN_10DP"
+            android:src="@drawable/icon_circle_unselected" />
+    </LinearLayout>
+
+
+</FrameLayout>

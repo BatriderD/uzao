@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/DIMEN_5DP"
+    android:layout_marginEnd="@dimen/DIMEN_5DP"
+    android:layout_marginStart="@dimen/DIMEN_5DP"
+    android:background="@drawable/icon_selected_tags"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/DIMEN_5DP"
+    android:text="我草你二大爷"
+    android:paddingEnd="@dimen/DIMEN_17DP"
+    android:paddingStart="@dimen/DIMEN_17DP"
+    android:paddingTop="@dimen/DIMEN_5DP"
+    android:textColor="@color/selector_person_tags_text"
+    android:textSize="@dimen/DIMEN_13SP" />

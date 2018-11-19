@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_normal" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rl_pay_confirm_bottom" />
+            <!--底部-->
+            <RelativeLayout
+                android:id="@+id/rl_pay_confirm_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_49DP"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+                <!--需支付-->
+                <TextView
+                    android:id="@+id/tv_pay_order_confirm_need_pay_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/DIMEN_14DP"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/DIMEN_16SP" />
+                <!--结算-->
+                <TextView
+                    android:id="@+id/tv_pay_order_confirm_pay"
+                    android:layout_width="@dimen/DIMEN_100DP"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/red"
+                    android:gravity="center"
+                    android:text="@string/close_account"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_16SP" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>

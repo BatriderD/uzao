@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sticker_text_editor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1DP"
+        android:layout_marginBottom="@dimen/DIMEN_16DP"
+        android:background="#F8F8F8" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_text_editor_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_43DP"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_43DP"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_text_editor_art_font"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="@dimen/DIMEN_43DP"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_art_font"
+            android:layout_width="@dimen/DIMEN_65DP"
+            android:layout_height="@dimen/DIMEN_36DP"
+            android:background="#CAA783"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="@string/art_font"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_10SP" />
+    </LinearLayout>
+
+
+</LinearLayout>

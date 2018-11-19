@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_bar_size">
+
+        <ImageView
+            android:id="@+id/tool_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:scaleType="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tool_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ripple_btn"
+            android:text="@string/finish"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_58DP"
+        android:layout_marginLeft="@dimen/DIMEN_19DP"
+        android:layout_marginRight="@dimen/DIMEN_19DP"
+        android:layout_marginTop="@dimen/DIMEN_45DP"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_register_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@null"
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_register_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_58DP"
+        android:layout_marginLeft="@dimen/DIMEN_19DP"
+        android:layout_marginRight="@dimen/DIMEN_19DP"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_reigster_phone_verification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/verification_code"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:paddingTop="@dimen/DIMEN_10DP"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <TextView
+            android:id="@+id/getSmsCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/DIMEN_5DP"
+            android:background="@drawable/shape_btn_bg_radius17"
+            android:paddingBottom="6dp"
+            android:paddingEnd="14dp"
+            android:paddingStart="14dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_14SP" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:background="@color/separator_line" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_39DP"
+        android:layout_marginBottom="@dimen/DIMEN_15DP"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:layout_marginTop="@dimen/DIMEN_53DP"
+        android:background="@drawable/shape_btn_login"
+        android:text="@string/immediately_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_15SP" />
+
+    <TextView
+        android:id="@+id/tv_register_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <TextView
+        android:id="@+id/tv_register_agreement1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/uzao_agreement_add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+        android:layout_marginTop="@dimen/DIMEN_80DP"
+        android:text="@string/login_way"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_11SP" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_login_wx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="9dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:text="@string/wx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_login_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="9dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:text="@string/qq"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_login_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="9dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:text="@string/sina"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_login_pds"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="9dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/DIMEN_16DP"
+            android:paddingRight="@dimen/DIMEN_16DP"
+            android:text="@string/psd_and_num_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+    </LinearLayout>
+
+</LinearLayout>

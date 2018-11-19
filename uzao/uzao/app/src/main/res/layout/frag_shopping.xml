@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackGround"
+    android:orientation="vertical">
+
+    <include layout="@layout/frag_shopping_title" />
+
+    <com.zhaotai.uzao.widget.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        style="@style/MultipleStatusViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--未登录状态-->
+            <include layout="@layout/frag_shopping_login" />
+
+            <LinearLayout
+                android:id="@+id/ll_shop_cart_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--tab-->
+                <include layout="@layout/frag_shopping_tab" />
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/swipe"
+                    style="@style/Refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_shopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+                <include layout="@layout/frag_shopping_bottom" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </com.zhaotai.uzao.widget.MultipleStatusView>
+</LinearLayout>

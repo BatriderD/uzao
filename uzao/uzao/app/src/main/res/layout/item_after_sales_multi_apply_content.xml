@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/pageBackGround" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:text="@string/after_sales_apply_choose"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+        <!--退款金额-->
+        <TextView
+            android:id="@+id/tv_apply_after_sales_return_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/DIMEN_12DP"
+            android:layout_marginStart="@dimen/DIMEN_15DP"
+            android:textColor="@color/red"
+            android:textSize="@dimen/DIMEN_12SP"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:orientation="horizontal">
+
+        <!--退款-->
+        <TextView
+            android:id="@+id/tv_apply_after_sales_return_money"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:text="@string/return_money"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+
+        <!--换货-->
+        <TextView
+            android:id="@+id/tv_apply_after_sales_replace_goods"
+            android:layout_width="@dimen/DIMEN_80DP"
+            android:layout_height="@dimen/DIMEN_22DP"
+            android:layout_marginStart="@dimen/DIMEN_25DP"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:text="@string/replace_goods"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_10DP"
+        android:background="@color/pageBackGround" />
+
+    <!--请填写商品售后申请描述-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:text="@string/after_sales_apply_reason"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <EditText
+        android:id="@+id/et_apply_after_sales_apply_reason"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/please_write_reason"
+        android:inputType="text"
+        android:maxLines="50"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/pageBackGround" />
+    <!--请上传照片-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginStart="@dimen/DIMEN_15DP"
+        android:gravity="center_vertical"
+        android:text="@string/after_sales_apply_has_upload_image"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+</LinearLayout>

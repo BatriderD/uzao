@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tool_bar_size"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/tool_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingEnd="@dimen/DIMEN_15DP"
+                android:paddingStart="@dimen/DIMEN_15DP"
+                android:scaleType="center"
+                android:src="@drawable/back_black" />
+
+            <TextView
+                android:id="@+id/tool_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+            <!--搜索-->
+            <ImageView
+                android:id="@+id/iv_material_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/DIMEN_12DP"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="@dimen/DIMEN_8DP"
+                android:scaleType="center"
+                android:src="@drawable/icon_search_black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/separator_line" />
+        </RelativeLayout>
+
+        <com.zhaotai.uzao.widget.MultipleStatusView
+            android:id="@+id/multiple_status_view"
+            style="@style/MultipleStatusViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_content"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/item_catch_tab"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/DIMEN_5DP" />
+            </LinearLayout>
+        </com.zhaotai.uzao.widget.MultipleStatusView>
+
+    </LinearLayout>

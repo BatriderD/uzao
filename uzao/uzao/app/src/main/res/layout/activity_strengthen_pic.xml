@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6000"
+    android:orientation="vertical">
+
+
+    <com.xiaopo.flying.sticker.SquareImageView
+        android:id="@+id/sqimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_100DP" />
+
+    <com.zhaotai.uzao.widget.MyMoveAbleSeekBar
+        android:id="@+id/sb_strengthen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sqimg"
+        android:layout_marginLeft="@dimen/DIMEN_15DP"
+        android:layout_marginRight="@dimen/DIMEN_15DP"
+        android:max="255"
+        android:maxHeight="2px"
+        android:progress="127"
+        android:progressDrawable="@color/white"
+        android:thumb="@drawable/ic_strengthen_thumb" />
+
+    <LinearLayout
+        android:id="@+id/ll_strengthen_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_strengthen"
+        android:layout_marginEnd="@dimen/DIMEN_5DP"
+        android:layout_marginStart="@dimen/DIMEN_5DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP">
+
+
+        <TextView
+            android:id="@+id/tv_strengthen_artwork"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_artwork_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_artwork"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_brightness"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_brightness_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_brightness"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_contrast"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_contrast_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_contrast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_saturation"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_saturation_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_saturation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+
+        <TextView
+            android:id="@+id/tv_strengthen_sx"
+            android:layout_width="@dimen/DIMEN_0DP"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/DIMEN_10DP"
+            android:drawableTop="@drawable/ic_strengthen_saturation_selector"
+            android:gravity="center"
+            android:text="@string/strengthen_sx"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_11SP" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DIMEN_15DP"
+        android:src="@drawable/icon_gb" />
+
+    <ImageView
+        android:id="@+id/iv_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/DIMEN_15DP"
+        android:src="@drawable/icon_next" />
+</RelativeLayout>

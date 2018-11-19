@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/DIMEN_10DP"
+        android:src="@drawable/close" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="温馨提示"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_25DP"
+        android:paddingBottom="25dp"
+        android:src="@drawable/ic_notice" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:fadeScrollbars="true"
+        android:lineSpacingExtra="3dp"
+        android:maxHeight="123dp"
+        android:gravity="top"
+        android:maxWidth="@dimen/DIMEN_70DP"
+        android:minHeight="@dimen/DIMEN_0DP"
+        android:minLines="1"
+        android:paddingEnd="@dimen/DIMEN_28DP"
+        android:paddingStart="@dimen/DIMEN_28DP"
+        android:scrollbars="vertical"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+        android:id="@+id/tv_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_41DP"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/DIMEN_23DP"
+        android:layout_marginStart="@dimen/DIMEN_23DP"
+        android:background="@drawable/bg_dialog_left_white"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/DIMEN_20DP"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_13SP" />
+</LinearLayout>

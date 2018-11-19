@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/DIMEN_5DP"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv_theme_template_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/iv_theme_template_selected_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/DIMEN_15SP"
+            android:padding="@dimen/DIMEN_10DP"
+            android:src="@drawable/icon_circle_selected"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_theme_template_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_8DP"
+        android:layout_marginTop="@dimen/DIMEN_13DP"
+        android:layout_marginStart="@dimen/DIMEN_8DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+
+    <TextView
+            android:id="@+id/tv_theme_template_preview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_21DP"
+            android:layout_marginBottom="@dimen/DIMEN_3DP"
+            android:layout_marginStart="@dimen/DIMEN_3DP"
+            android:background="@drawable/shape_bg_grey_red_selector"
+            android:gravity="center"
+            android:text="预览"
+            android:textColor="@color/selector_red_text"
+            android:textSize="@dimen/DIMEN_12SP" />
+
+
+</LinearLayout>

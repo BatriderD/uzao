@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--物流公司-->
+    <TextView
+        android:id="@+id/tv_transport_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+        <!--物流单号-->
+        <TextView
+            android:id="@+id/tv_transport_company_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <!--查看物流-->
+        <TextView
+            android:id="@+id/tv_transport_check"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/shape_order_btn"
+            android:gravity="center"
+            android:text="查看物流"
+            android:textColor="@color/black"
+            android:textSize="@dimen/DIMEN_13SP" />
+    </LinearLayout>
+
+</LinearLayout>

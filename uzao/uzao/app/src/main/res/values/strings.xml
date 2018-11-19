@@ -1,0 +1,498 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">优造中国</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="input_name">请输入姓名</string>
+    <string name="phone_number">手机号码</string>
+    <string name="phone_number_1">手机号码 :  </string>
+    <string name="phone_password_1">密码 :  </string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="place">所在地区</string>
+    <string name="immediately_login">立即登录</string>
+    <string name="wait_pay">待付款</string>
+    <string name="wait_check">待审核</string>
+    <string name="wait_commend">待评价</string>
+    <string name="wait_send">待发货</string>
+    <string name="wait_receive">待收货</string>
+    <string name="setting">设置</string>
+    <string name="verification_code">验证码</string>
+    <string name="verification_code_1">验证码 :  </string>
+    <string name="terms_service_one">点击立即登录,即表示阅读并同意</string>
+    <string name="terms_service">优造中国服务条款</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="head">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="real_name">真实姓名</string>
+    <string name="birthday">出生日期</string>
+    <string name="sex">性别</string>
+    <string name="please_write">请填写</string>
+    <string name="please_choose">请选择</string>
+    <string name="search_text">搜索商品或设计师</string>
+    <string name="search_template_text">搜索载体</string>
+    <string name="choose_type">规格选择</string>
+    <string name="design_idea">设计理念及说明展示</string>
+    <string name="base_commodity_information">商品基本信息</string>
+    <string name="detail_commodity_information">商品详情信息</string>
+    <string name="immediately_buy">立即购买</string>
+    <string name="add_shopping_cart">加入购物车</string>
+    <string name="sure">确定</string>
+    <string name="save">保存</string>
+    <string name="please_set_nick_name">请填写昵称</string>
+    <string name="please_set_profession">请填写职业</string>
+    <string name="please_set_real_name">请填写真实姓名</string>
+    <string name="available_price">可提现金额:¥%s</string>
+    <string name="exit_login">退出登录</string>
+    <string name="colon">:</string>
+    <string name="color">颜色</string>
+    <string name="size">规格</string>
+    <string name="number">数量</string>
+    <string name="please_choose_type">请选择规格</string>
+    <string name="design_idear">设计理念</string>
+    <string name="product_show">商品展示</string>
+    <string name="about_us">关于我们</string>
+    <string name="clean_cache">清除缓存</string>
+    <string name="add_attention">+关注</string>
+    <string name="already_attention">已关注</string>
+    <string name="uzao_china">优造中国</string>
+    <string name="service_tel">客服电话:400-xxx-xxx</string>
+    <string name="shopping_cart_1">购物车还空空如也哦~</string>
+    <string name="shopping_cart_2">登录后将同步购物车中的商品~</string>
+    <string name="check_all">全选</string>
+    <string name="goods_number">X%s</string>
+    <string name="check_the_logistics">查看物流</string>
+    <string name="transport_company">物流公司 : %s</string>
+    <string name="transport_state">运输状态 : %s</string>
+    <string name="transport_num">运单号 : %s</string>
+    <string name="transport_tel">官方电话 : %s</string>
+    <string name="apply">提交</string>
+    <string name="add_image">添加图片</string>
+    <string name="zero">0</string>
+    <string name="zero1">0.00</string>
+    <string name="sixty_second">60S</string>
+    <string name="profession">职业</string>
+    <string name="email">邮箱</string>
+    <string name="total_price">总额 : ¥%s</string>
+    <string name="money_price">¥%s</string>
+    <string name="cut_price">已减 : ¥%s</string>
+    <string name="move_collect">移到收藏夹</string>
+    <string name="activity_cut">活动优惠</string>
+    <string name="activity_cut1">活动立减</string>
+    <string name="coupons">优惠券</string>
+    <string name="goods_price">商品金额</string>
+    <string name="buy_them">合并付款</string>
+    <string name="favorite_count">粉丝数 : %s</string>
+    <string name="goods_count">商品数 : %s</string>
+    <string name="personal_center">个人中心</string>
+    <string name="please_write_comment">请填写评价</string>
+    <string name="comment_hint">详情描述,将这次购物的体验分享给其他人吧</string>
+    <string name="comment_num">用户评价(%s)</string>
+    <string name="batch_address">分批收货地址</string>
+    <string name="belong_category">所属分类  :  %s</string>
+    <string name="reason">原因  :  %s</string>
+    <string name="publish_time">发布时间    %s</string>
+    <string name="unattended_activity">未参加活动</string>
+    <string name="history_search">历史搜索</string>
+    <string name="filter">筛选</string>
+    <string name="comprehensive_ranking">综合排序</string>
+
+    <!--首页-->
+    <string name="inspiration_gallery">灵感画廊</string>
+    <string name="custom_made">定制</string>
+    <string name="design">设计</string>
+    <string name="how_design">如何定制</string>
+    <string name="create_theme">创作主题</string>
+    <string name="become_designer">成为设计师</string>
+
+    <!--设置-->
+    <string name="modify_password">修改密码</string>
+    <string name="feedback">意见反馈</string>
+    <string name="login_way">其它登录方式</string>
+    <string name="feedback_content">反馈内容</string>
+    <string name="share_app">分享app</string>
+    <string name="current_version">当前版本号</string>
+    <string name="message_push">消息推送</string>
+    <string name="please_enter_password">请输入密码</string>
+    <string name="please_enter_password_again">请再次输入密码</string>
+    <string name="region">地区</string>
+    <string name="version_number">V%s</string>
+
+    <!--订单-->
+    <string name="cancel_order">取消订单</string>
+    <string name="order_pay">付款</string>
+    <string name="order_num">订单编号    %s</string>
+    <string name="order_num_sample">打样订单编号    %s</string>
+    <string name="order_num_product">批量生产订单编号    %s</string>
+    <string name="order_num1">订单编号: %s</string>
+    <string name="order_child_num">订单编号:  %s</string>
+    <string name="create_time">下单时间:  %s</string>
+    <string name="order_detail_pay_way">支付方式:  %s</string>
+    <string name="create_time1">创建时间</string>
+    <string name="pay_time">付款时间:  %s</string>
+    <string name="product_total_price">商品合计:  %s</string>
+    <string name="order_detail_cut_price">优惠活动:  -¥%s</string>
+    <string name="order_detail_discount_price">优惠券:  -¥%s</string>
+    <string name="cancel_time">关闭时间</string>
+    <string name="finish_time">完成时间</string>
+    <string name="count_time">还有%s关闭订单</string>
+    <string name="count_time_confirm_goods">自动收货时间还剩 : %s</string>
+    <string name="receive_goods_time">收货时间 : %s</string>
+    <string name="look_order">查看订单</string>
+    <string name="return_main">继续逛逛</string>
+    <string name="pay_goods_num">共 %s 件商品</string>
+    <string name="pay_goods_money">金额 ¥%s</string>
+    <string name="repay">重新支付</string>
+    <string name="product_order">生产订单</string>
+    <string name="my_made">我的智造</string>
+    <string name="product_info">生产信息</string>
+    <string name="order_info">订单信息</string>
+    <string name="include_freight">(含运费¥%s)</string>
+    <string name="produce_pay_way">支付方式</string>
+    <string name="produce_pay_no">交易号</string>
+    <string name="produce_pay_time">支付时间</string>
+    <string name="order_package">包裹 %s</string>
+    <string name="many_account">共%s件</string>
+
+    <!--售后状态-->
+    <string name="after_sales_order_number">售后单编号:  %s</string>
+    <string name="after_sales_order_number1">售后单号    %s</string>
+    <string name="after_sales_order_type">售后方式    %s</string>
+    <string name="after_sales_order_status">售后状态    %s</string>
+    <string name="after_sales_apply_time">申请售后时间:  %s</string>
+    <string name="after_sales_apply_time1">申请时间    %s</string>
+    <string name="after_sales_apply_choose">我要选择</string>
+    <string name="after_sales_apply_reason">申请售后原因</string>
+    <string name="after_sales_apply_write_des1">售后申请描述</string>
+    <string name="after_sales_apply_has_upload_image">上传照片</string>
+    <string name="after_sale_detail">售后单详情</string>
+    <string name="return_money">退款</string>
+    <string name="return_money1">退款金额</string>
+    <string name="replace_goods">换货</string>
+    <string name="please_write_reason">请填写原因</string>
+    <string name="remark">备注  %s</string>
+    <string name="apply_after_sales">申请售后</string>
+    <string name="after_sales_reject">售后失败原因</string>
+
+    <!--支付-->
+    <string name="total_account">合计</string>
+    <string name="close_account">结算</string>
+    <string name="account">¥%s</string>
+    <string name="cut_account">-¥%s</string>
+    <string name="pay_way">支付方式选择</string>
+    <string name="refund_amount">退款金额 %s</string>
+    <string name="after_number">售后编号 %s</string>
+    <string name="pay_way_wx">微信</string>
+    <string name="pay_way_zfb">支付宝</string>
+    <string name="bill">发票</string>
+    <string name="bill_type">发票类型</string>
+    <string name="bill_title">发票抬头</string>
+    <string name="bill_place">请输入个人或公司名</string>
+    <string name="bill_content">发票内容</string>
+    <string name="bill_type1">日用品</string>
+    <string name="bill_type2">家具用品</string>
+    <string name="bill_type3">服饰</string>
+    <string name="bill_type4">化妆品</string>
+    <string name="no_bill">不开具发票</string>
+    <string name="bill_public">纸质普通发票</string>
+    <string name="go_pay">去支付</string>
+    <string name="need_pay_num">需支付:¥%s</string>
+    <string name="order_money">订单金额  ¥%s</string>
+    <string name="real_pay">实付金额</string>
+
+    <!-- 首页导航栏-->
+    <string name="main_page">首页</string>
+    <string name="category">分类</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="my">我的</string>
+
+    <!-- 加载框-->
+    <string name="loading">请稍后…</string>
+    <!-- 网络-->
+    <string name="no_net">网络不可用,请检查你的网络</string>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+
+    <!-- 收货地址-->
+    <string name="add_address">新增收货地址</string>
+    <string name="add_address1">添加收货地址</string>
+    <string name="title_address">收货地址</string>
+    <string name="receive_address">收货地址 : %s</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="receive_people">收货人 : %s</string>
+    <string name="receive_people1">收货人 : </string>
+    <string name="detail_address">详细地址</string>
+    <string name="set_default_address">设为默认</string>
+    <string name="add_address_success">添加成功</string>
+    <string name="add_address_failed">上传失败</string>
+    <string name="manage_address">收货地址</string>
+    <string name="manage">管理</string>
+    <string name="default_address">默认地址</string>
+    <string name="set_default">设为默认</string>
+    <string name="del">删除</string>
+    <string name="cancel">取消</string>
+    <string name="updata_address_error">地址编辑失败</string>
+    <string name="updata_address_success">地址编辑成功</string>
+    <string name="sure_to_del_address">确认要删除该地址吗？</string>
+    <string name="selected_address">选择地区</string>
+
+    <!-- 我的页面-->
+    <string name="collection_goods">收藏的商品</string>
+    <string name="attention_designer">我的关注</string>
+    <string name="my_goods">我的商品</string>
+    <string name="my_works">我的作品</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_design">我的设计</string>
+    <string name="my_material">我的素材</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="my_customer_service">我的售后</string>
+    <string name="my_invite">邀请返利</string>
+    <string name="contact_customer_service">联系客服</string>
+    <string name="sell_order">售出订单</string>
+    <string name="choose_classify">选择类别</string>
+    <string name="enter_verification_code">请输入验证码</string>
+    <string name="login">登录</string>
+    <string name="discount_number">%s张可用</string>
+    <!--消息页面-->
+    <string name="message_detail">消息详情</string>
+    <!--商品页面-->
+    <string name="all_product">全部</string>
+    <string name="published_product">已发布</string>
+    <string name="un_publish_product">未发布</string>
+    <string name="audit_product">审核中</string>
+    <string name="PRODUCT_DETAILS">商品详情</string>
+
+    <!--页面状态-->
+    <string name="empty_view_hint">暂无数据</string>
+    <string name="error_view_hint">加载失败</string>
+    <string name="no_network_view_hint">网络好像不太给力，请稍后再试哦~</string>
+    <!--登录 注册相关页面-->
+    <string name="exit_login_success">退出登录成功</string>
+    <string name="next_step">下一步</string>
+    <string name="register">注册</string>
+    <string name="immediately_register">立即注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="set_new_password">设置新密码</string>
+    <string name="uzao_agreement"><![CDATA[<font size=\"11px\" color=\"#FFFFFF\">点击立即登录，即表示已同意</font><font size=\"11px\" color=\"#d30000\">《优造中国服务条款》</font>]]></string>
+    <string name="uzao_agreement2"><![CDATA[<font size=\"11px\" color=\"#959595\">点击立即登录，即表示已同意</font><font size=\"11px\" color=\"#202020\">《优造中国服务条款》</font>]]></string>
+    <string name="uzao_agreement1"><![CDATA[<font size=\"11px\" color=\"#FFFFFF\">点击立即登录，即表示已同意</font><font size=\"11px\" color=\"#d30000\">《优造中国服务条款》</font>]]></string>
+    <string name="uzao_agreement_add">未注册优造的手机号 登录时将自动注册</string>
+    <string name="please_input_correct_phone_number">请输入正确的手机号码！</string>
+    <string name="input_again_1">再次输入:</string>
+    <string name="send_msg_to_phone">已发送至手机号码:</string>
+    <string name="please_input_verification">请输入验证码!</string>
+    <string name="please_enter_psd">请输入密码！</string>
+    <string name="please_enter_psd2">请再次输入密码！</string>
+    <string name="please_enter_same_psd">请输入相同密码！</string>
+    <string name="change_password">修改密码</string>
+    <string name="enter_old_password1">输入旧密码：</string>
+    <string name="enter_old_password">输入旧密码</string>
+    <string name="old_password_cant_empty">旧密码不能为空</string>
+    <string name="_86">+86</string>
+    <string name="enter_your_phone">请输入您的手机号</string>
+    <string name="retry_get_sms_code">重新获取验证码</string>
+    <string name="after_second_retry">秒后重发</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="password">密码</string>
+    <string name="password_again">再次输入</string>
+    <string name="psd_and_num_cant_empty">账号密码不能为空！</string>
+    <string name="psd_and_num_login">密码登录</string>
+    <string name="login_msg">验证码登录</string>
+    <string name="psd_length_error">请输入6~20位密码！</string>
+    <string name="psd_error">密码需以小写字母开头，只能包含数字、字母、下划线</string>
+    <string name="please_enter_psd_new">输入新密码</string>
+    <string name="please_sure_psd_new">请确认新密码</string>
+    <string name="wx">微信</string>
+    <string name="qq">QQ</string>
+    <string name="sina">微博</string>
+
+    <!--消息中心-->
+    <string name="notification_messages">通知消息</string>
+    <string name="system_messages">系统消息</string>
+    <string name="comment_messages">评论消息</string>
+    <string name="message_center">消息中心</string>
+    <!--优惠券-->
+    <string name="coupon_used_forever">永久</string>
+    <string name="selected_coupon">选择优惠券</string>
+    <string name="no_coupon">不使用优惠券</string>
+    <string name="coupon">优惠券</string>
+    <!--首页-->
+    <string name="home_page">首页</string>
+    <string name="mall">商城</string>
+    <string name="shopping">购物</string>
+    <string name="search">搜索</string>
+    <string name="HOT">HOT</string>
+    <string name="more"><![CDATA[more>]]></string>
+    <string name="more1">更多</string>
+    <!--设计师主页-->
+    <string name="personal_introductions">个人简介</string>
+    <string name="no_introductions">这个家伙很懒什么也没有</string>
+    <string name="fans_num">粉丝数</string>
+    <string name="product_num">商品数</string>
+    <string name="_0">0</string>
+    <string name="mall_activity">商城活动</string>
+
+    <!--设计页面-->
+    <string name="bar_underground">底图</string>
+    <string name="bar_picture">图片</string>
+    <string name="bar_filter">滤镜</string>
+    <string name="bar_strengthen">增强</string>
+    <string name="bar_sticker">贴纸</string>
+    <string name="bar_text">文字</string>
+    <string name="strengthen_artwork">原图</string>
+    <string name="strengthen_saturation">饱和度</string>
+    <string name="strengthen_sx">色相</string>
+    <string name="strengthen_contrast">对比度</string>
+    <string name="strengthen_brightness">亮度</string>
+    <string name="finish_design">完成设计</string>
+    <string name="save_work">保存作品</string>
+    <string name="use_on_carrier">应用载体</string>
+    <string name="work_concept">作品理念</string>
+    <string name="work_name">作品名称</string>
+    <string name="result_preview">效果预览图</string>
+    <string name="del_pic">删除图片</string>
+    <string name="del_text">删除文字</string>
+    <string name="del_all">删除所有</string>
+    <string name="load_img_error">图片加载异常</string>
+    <string name="see_detail">查看详情</string>
+    <string name="front">正面</string>
+    <string name="see_only_me">作品仅自己可见</string>
+    <string name="bar_design_layer">图层</string>
+    <string name="bar_design_copy">复制</string>
+    <string name="drawable_sticker_change_failed">图片贴纸更改失败</string>
+    <string name="design_technology">工艺</string>
+    <string name="bar_design_material">素材</string>
+    <string name="bar_design_clip">裁剪</string>
+    <string name="bar_design_alph">背景透明</string>
+    <string name="bar_design_fit">适配</string>
+    <string name="bar_design_full">填充</string>
+    <string name="bar_design_revocation">撤销</string>
+    <string name="grids">网格</string>
+    <string name="word_space">字间距</string>
+    <string name="text_orientation">横-竖</string>
+
+    <string name="error_add_sticker">图片贴纸添加失败</string>
+    <!-- 设计模块-->
+    <string-array name="design_material">
+
+        <item>图片</item>
+        <item>形状</item>
+        <item>滤镜</item>
+        <item>增强</item>
+        <item>文字</item>
+        <item>贴图</item>
+
+    </string-array>
+
+    <string-array name="color_name">
+
+        <item>#F5F5DC</item>
+        <item>#FFE4C4</item>
+        <item>#000000</item>
+        <item>#FFEBCD</item>
+        <item>#0000FF</item>
+        <item>#8A2BE2</item>
+        <item>#A52A2A</item>
+        <item>#DEB887</item>
+        <item>#5F9EA0</item>
+        <item>#7FFF00</item>
+        <item>#D2691E</item>
+        <item>#FF7F50</item>
+        <item>#6495ED</item>
+        <item>#FFF8DC</item>
+        <item>#DC143C</item>
+        <item>#00FFFF</item>
+        <item>#483D8B</item>
+        <item>#2F4F4F</item>
+        <item>#00CED1</item>
+        <item>#00BFFF</item>
+
+    </string-array>
+
+    <string-array name="font_name">
+
+        <item>BlackJack</item>
+        <item>Arial</item>
+        <item>Capture it</item>
+        <item>Cartoon Bones</item>
+        <item>FrLt DFGirl</item>
+        <item>InkSpecial</item>
+        <item>MUSCLE_CRE</item>
+
+
+    </string-array>
+
+    <string name="company_remit1">1、汇款时将识别码填写至汇款单\"用途\"栏;</string>
+    <string name="company_remit2">2、请在7天内付清款项，超过10天未对账系统自动会取消订单。到账周期为3个工作日。</string>
+    <string name="company_remit3">
+        1、线下公司转账需将此汇款识别码填写至电汇凭证的【汇款用途】、【附言】、【摘要】等栏内，汇款识别码组成：（UZAO+订单号）。企业网银转账请务必将汇款识别码填写到附言、摘要、备注等栏内。 （提醒：因不同银行备注字段不同，最好是将所有的可填写备注的地方都填写上汇款识别码）。\n\n
+        2、线下公司转账汇款时备注汇款识别码，可确保订单及时核销，请务必填写正确，勿私自增加其他文字说明。 \n\n
+        3、请在7天内付清款项，超过10天未对账系统自动会取消订单。到账周期为3个工作日。
+    </string>
+
+    <string name="click_copy">点击复制</string>
+    <string name="used_count">使用数</string>
+    <string name="template_used_count">使用%s次</string>
+    <string name="synthesize">综合</string>
+    <string name="price">价格</string>
+    <string name="show_technology">工艺：%s</string>
+
+
+    <!-- 圆角星星 -->
+    <string name="round_star">
+        M333.312 257.856c-8.832 16.512-22.208 27.264-36.224 28.736l-208.64 30.272C8.064 330.24-23.68 430.528 33.664 490.176l150.016 150.912a52.48 52.48 0 0 1 14.848 44.928l-36.352 214.08c-12.864 83.648 70.784 147.072 141.632 106.88l185.472-100.288a42.752 42.752 0 0 1 44.8-0.256l186.56 100.8c70.464 39.936 154.048-23.488 141.312-106.752l-36.416-213.952a60.16 60.16 0 0 1 15.104-45.696l149.376-150.464c57.728-59.968 25.984-160.192-53.888-173.504l-208.256-30.144c-16.512-3.456-30.912-14.208-36.8-27.968L598.912 61.888A94.464 94.464 0 0 0 425.024 62.08L333.312 257.856m0 0
+    </string>
+    <string name="input_text">输入文字</string>
+    <string name="clear_layer">清除画布</string>
+    <string name="icon_change_side">切面</string>
+    <string name="art_font">艺术字</string>
+    <string name="font">字体</string>
+    <string name="material">素材</string>
+    <string name="design_finish_notice">您可以上架售卖或者购买自己设计的作品</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="sure_del_all_layer">确定删除所有图层？</string>
+    <string name="design_guild_1">在这里直接上传添加你喜欢的精美图片，让您的创意与众不同…</string>
+    <string name="design_guild_2">为你的创意增加文案说明或者画龙点睛的作用</string>
+    <string name="design_guild_3">我们为您提供精美的素材库文集，只有你想不到</string>
+    <string name="design_guild_4">我们为您提供最流行的的字体文案，为你的设计增光加彩</string>
+    <string name="design_guild_5">针对不同的图层进行上下移动，隐藏，删除图层等功能…</string>
+    <string name="catch_word">流行词</string>
+    <string name="buy_again">重新购买</string>
+    <string name="publish">发布</string>
+    <string name="lxy">流行语</string>
+    <string name="tags">标签</string>
+    <string name="tag">标签</string>
+    <string name="add_tag">添加标签</string>
+    <string name="person_introduce">个人简介</string>
+    <string name="introduce">简介:</string>
+    <string name="choose_tags">选择标签</string>
+    <string name="chang_info">填写资料</string>
+    <string name="my_product">我的商品</string>
+    <string name="my_theme">我的场景</string>
+    <string name="MATERIAL_CANT_CHANGE">素材不支持裁剪，滤镜和背景透明</string>
+    <string name="error_add_text">添加文字失败</string>
+    <string name="net_error_retry">重新加载</string>
+    <string name="guess_you_like">猜你喜欢</string>
+    <string name="default_text_sticker">优造中国</string>
+
+    <!--空页面-->
+    <string name="empty_btn">去逛逛</string>
+    <string name="empty_search">您搜索的结果不存在</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="wx_friend">微信好友</string>
+
+    <string name="umeng_sharebutton_poster">生成海报</string>
+    <string name="sell_specification">售卖规格</string>
+    <string name="title_of_work">作品名称</string>
+    <string name="set_design_idear">设计理念填写</string>
+    <string name="read_and_abide_by">我已经阅读并遵守</string>
+    <string name="apply_for_sale">申请上架</string>
+    <string name="scene_manager">场景管理</string>
+    <string name="my_manager_scene">场景管理</string>
+    <string name="sure_del_this_album">确定删除该相册？</string>
+    <string name="empty_album_photo">没有上传图片哦</string>
+    <string name="empty_post">没有发布的帖子哦</string>
+    <string name="not_scene_manager">您还不是场景运营人哦</string>
+    <string name="all">全部</string>
+    <string name="scene_manage">场景管理</string>
+    <string name="re_choose">重新选择</string>
+
+</resources>

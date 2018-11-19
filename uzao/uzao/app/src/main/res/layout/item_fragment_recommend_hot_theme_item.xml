@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_theme_root"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhaotai.uzao.view.RoundImageView
+        android:id="@+id/iv_theme_pic"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginBottom="@dimen/DIMEN_13DP"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_place_holder"
+        app:myRadius="@dimen/DIMEN_10DP"
+        app:type="round" />
+
+    <TextView
+        android:id="@+id/tv_theme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+</LinearLayout>
+
+

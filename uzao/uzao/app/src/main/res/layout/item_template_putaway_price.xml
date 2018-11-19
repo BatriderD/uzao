@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_template_putaway_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/DIMEN_15DP"
+        android:layout_marginStart="@dimen/DIMEN_22DP"
+        android:layout_marginTop="@dimen/DIMEN_10DP"
+        android:src="@drawable/icon_circle_unselected" />
+
+    <TextView
+        android:id="@+id/tv_template_putaway_sku_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_template_putaway_checkbox"
+        android:paddingBottom="@dimen/DIMEN_10DP"
+        android:paddingTop="@dimen/DIMEN_10DP"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP"
+        tools:text="白色黑色混搭/xl/异次元" />
+
+
+    <EditText
+        android:id="@+id/et_sale_price"
+        android:layout_width="115dp"
+        android:layout_height="28dp"
+        android:layout_alignStart="@id/tv_template_putaway_sku_value"
+        android:background="@drawable/shape_order_btn"
+        android:hint="售卖价格"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/tv_template_putaway_sku_value"
+        android:maxLength="9"
+        android:layout_marginBottom="@dimen/DIMEN_10DP"
+        android:maxLines="1"
+        android:paddingStart="@dimen/DIMEN_5DP"
+        android:textColor="@color/black"
+        android:textColorHint="@color/cdcdcd"
+        android:textSize="@dimen/DIMEN_12SP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/DIMEN_7DP"
+        android:includeFontPadding="false"
+        android:layout_toEndOf="@id/et_sale_price"
+        android:layout_alignBottom="@id/et_sale_price"
+        android:text="元"
+        android:textColor="@color/black"
+        android:textSize="@dimen/DIMEN_13SP" />
+
+    <TextView
+        android:id="@+id/tv_recommended_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="@dimen/DIMEN_20DP"
+        android:layout_marginStart="@dimen/DIMEN_12DP"
+        android:layout_alignBottom="@id/et_sale_price"
+        android:gravity="right"
+        android:includeFontPadding="false"
+        android:textColor="@color/c242424"
+        android:textSize="@dimen/DIMEN_12SP"
+        tools:text="成本价：180.00元" />
+
+
+</RelativeLayout>

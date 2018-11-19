@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--首页-->
+        <TextView
+            android:id="@+id/tv_home_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/home_page"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text_selector"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:drawableTop="@drawable/home_home_selector"
+            android:drawablePadding="@dimen/DIMEN_3DP"/>
+
+        <!--分类-->
+        <TextView
+            android:id="@+id/tv_home_category"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text_selector"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:drawableTop="@drawable/home_category_selector"
+            android:drawablePadding="@dimen/DIMEN_3DP"/>
+
+        <!--购物车-->
+        <TextView
+            android:id="@+id/tv_home_shopping"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_cart"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text_selector"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:drawableTop="@drawable/home_shopping_selector"
+            android:drawablePadding="@dimen/DIMEN_3DP"/>
+
+        <!--个人中心-->
+        <TextView
+            android:id="@+id/tv_home_my"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/my"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text_selector"
+            android:textSize="@dimen/DIMEN_11SP"
+            android:drawableTop="@drawable/home_my_selector"
+            android:drawablePadding="@dimen/DIMEN_3DP"/>
+
+    </LinearLayout>
+
+</LinearLayout>

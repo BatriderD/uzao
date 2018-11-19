@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_marginBottom="@dimen/DIMEN_5DP"
+    android:layout_marginEnd="@dimen/DIMEN_5DP"
+    android:layout_marginStart="@dimen/DIMEN_5DP"
+    android:background="@drawable/shape_bg_tag_grey"
+    android:gravity="center"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:textColor="@color/black"
+    android:textSize="@dimen/DIMEN_12SP" />
+

@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhaotai.uzao">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme">
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="growing.6f1e231337c35eb4" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!--首页-->
+        <activity
+            android:name=".HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <!-- 地址列表页面 -->
+        <activity
+            android:name=".ui.person.address.AddressActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.person.address.AddressFromOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 编辑地址页面 -->
+        <activity
+            android:name=".ui.person.address.ModifyAddressActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 添加地址页面 -->
+        <activity
+            android:name=".ui.person.address.AddAddressActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 地区选择 页面 -->
+        <activity
+            android:name=".ui.person.address.RegionSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息 页面 -->
+        <activity
+            android:name=".ui.person.setting.PersonInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 三级页面 和商品列表 -->
+        <activity
+            android:name=".ui.category.goods.activity.CategoryListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 商品详情 -->
+        <activity
+            android:name=".ui.category.goods.activity.CommodityDetailMallActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改昵称 -->
+        <activity
+            android:name=".ui.person.setting.ChangeNickNameActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 修改真实名字-->
+        <activity
+            android:name=".ui.person.setting.ChangeRealNameActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 设计师主页-->
+        <activity
+            android:name=".ui.designer.activity.DesignerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--搜索页面-->
+        <activity
+            android:name=".ui.search.CommodityAndSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--设置界面-->
+        <activity
+            android:name=".ui.person.setting.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--关注的设计师-->
+        <activity
+            android:name=".ui.person.attention.AttentionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--关注的设计师搜索-->
+        <activity
+            android:name=".ui.person.attention.AttentionDesignerSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--关注的品牌搜索-->
+        <activity
+            android:name=".ui.person.attention.AttentionBrandSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--收藏的商品-->
+        <!--我的商品-->
+        <activity
+            android:name=".ui.person.myproduct.MyProductActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--关于我们-->
+        <activity
+            android:name=".ui.person.setting.AboutUsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--消息列表-->
+        <activity
+            android:name=".ui.person.message.activity.MessageCenterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--消息详情-->
+        <activity
+            android:name=".ui.person.message.activity.MessageDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--评论消息详情页面-->
+        <activity
+            android:name=".ui.person.message.activity.MessageCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!--订单确认-->
+        <activity
+            android:name=".ui.order.activity.ConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--修改订单确认页-->
+        <!--支付方式-->
+        <activity
+            android:name=".ui.order.activity.SelectPayWayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--发票信息-->
+        <activity
+            android:name=".ui.order.activity.SelectBillActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--售出订单-->
+        <!--我的售后-->
+        <activity
+            android:name=".ui.order.activity.MyAfterSalesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--售后详情-->
+        <activity
+            android:name=".ui.order.activity.MyAfterSalesDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--物流信息-->
+        <activity
+            android:name=".ui.order.activity.LogisticsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--我的订单-->
+        <activity
+            android:name=".ui.order.activity.MyOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--待付款详情页面-->
+        <activity
+            android:name=".ui.order.activity.WaitPayDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--待审核订单详情页面-->
+        <activity
+            android:name=".ui.order.activity.WaitApproveDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--待发货订单详情页面-->
+        <activity
+            android:name=".ui.order.activity.WaitDeliveryDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--待收货订单详情页面-->
+        <activity
+            android:name=".ui.order.activity.WaitReceiveDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--已完成订单详情页面-->
+        <activity
+            android:name=".ui.order.activity.CompleteDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--已关闭订单详情页面-->
+        <activity
+            android:name=".ui.order.activity.CloseDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--申请售后-->
+        <activity
+            android:name=".ui.order.activity.ApplyAfterSalesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--申请售后详情页-->
+        <activity
+            android:name=".ui.order.activity.ApplyAfterSalesDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--申请售后详情_填写物流-->
+        <activity
+            android:name=".ui.order.activity.ApplyAfterSalesDetailAddTransportActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--支付结果页-->
+        <activity
+            android:name=".ui.order.activity.PayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--图片预览页面-->
+        <activity
+            android:name=".ui.util.PreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--修改职业页面-->
+        <activity
+            android:name=".ui.person.setting.ChangeProfessionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--我的优惠券-->
+        <activity
+            android:name=".ui.person.discount.activity.MyDiscountCouponActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--意见反馈-->
+        <activity
+            android:name=".ui.person.feedback.FeedBackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--选择类别页面-->
+        <!--选择选择商品-->
+        <!--注册页面1-->
+        <activity
+            android:name=".ui.login.activity.RegisterActivity1"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--新版登录页面-->
+        <activity
+            android:name=".ui.login.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.activity.LoginMsgActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--注册页面2-->
+        <activity
+            android:name=".ui.login.activity.RegisterActivity2"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--修改密码-->
+        <activity
+            android:name=".ui.login.activity.ChangePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--绑定手机号-->
+        <activity
+            android:name=".ui.login.activity.BindPhoneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--设置新密码-->
+        <activity
+            android:name=".ui.login.activity.SetNewPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--选择优惠卷-->
+        <activity
+            android:name=".ui.person.discount.activity.SelectedCouponActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--支付确认订单-->
+        <activity
+            android:name=".ui.order.activity.PayConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--支付确认订单dingdan-->
+        <activity
+            android:name=".ui.order.activity.PayConfirmOrderFromListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--活动商品列表-->
+        <activity
+            android:name=".ui.category.goods.activity.ActivityListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--购物车页面-->
+        <activity
+            android:name=".ui.shopping.activity.ShoppingCartActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--商品二级分类页面-->
+        <activity
+            android:name=".ui.category.goods.activity.CategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--评价-->
+        <activity
+            android:name=".ui.order.activity.CommentOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--评价详情-->
+        <activity
+            android:name=".ui.order.activity.CommentDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--评价列表页-->
+        <activity
+            android:name=".ui.category.goods.activity.CommentListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--生产订单-->
+        <activity
+            android:name=".ui.productOrder.activity.ProductOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--生产订单 待付首款-->
+        <activity
+            android:name=".ui.productOrder.activity.WaitFirstPayProductOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--生产订单 待收首款-->
+        <activity
+            android:name=".ui.productOrder.activity.WaitFirstPayConfirmActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--打样加大货  打样生产中-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceSampleDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  打样确认-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceSampleReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  大货样生产中-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceProduceSamplingDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  大货样生产中-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceProduceSamplingReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  待付尾款-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceWaitLastPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  待收尾款-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceWaitReceiveLastPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  待发货-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceWaitDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  待收货-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceWaitReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样加大货  已完成-->
+        <activity
+            android:name=".ui.productOrder.activity.SamplingProduceFinishedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  大货样生产中-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceSampleDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  大货样待确认-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceSampleReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  待付尾款-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceWaitLastPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  待收款-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceWaitReceiveLastPayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  待发货-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceWaitDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  待收货-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceWaitReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--大货  关闭-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceOrderClosedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样 待收款 和待发货-->
+        <activity
+            android:name=".ui.productOrder.activity.SampleWaitPayConfirmAndDeliverActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样 待收货-->
+        <activity
+            android:name=".ui.productOrder.activity.SampleWaitReceiveActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--打样 已完成-->
+        <activity
+            android:name=".ui.productOrder.activity.SampleFinishedActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--生产订单支付页面-->
+        <activity
+            android:name=".ui.productOrder.activity.ProductOrderSelectPayWayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--支付明细-->
+        <activity
+            android:name=".ui.productOrder.activity.ProducePayInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--分批次地址选择-->
+        <activity
+            android:name=".ui.productOrder.activity.ProduceAddressSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--生产订单 支付结果页-->
+        <activity
+            android:name=".ui.productOrder.activity.ProducePayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--汇款-->
+        <activity
+            android:name=".ui.productOrder.activity.CompanyRemitActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--我的制造-->
+        <activity
+            android:name=".ui.make.activity.MakeListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--制造详情页-->
+        <activity
+            android:name=".ui.make.activity.MakeDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--我的设计-->
+        <activity
+            android:name=".ui.design.activity.MyDesignActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--我的设计详情页-->
+        <activity
+            android:name=".ui.design.activity.MyDesignDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计详情页-->
+        <activity
+            android:name=".ui.design.activity.DesignDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--载体属性选择页面-->
+
+        <!--载体设计完成  购买页面-->
+        <activity
+            android:name=".ui.order.activity.TemplatePurchaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--载体设计完成 模板商品 购买页面-->
+        <activity
+            android:name=".ui.order.activity.TemplateDesignPurchaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--上架商城-->
+        <activity
+            android:name=".ui.order.activity.TemplatePutawayActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--设计作品-->
+
+        <!--重新编辑-->
+        <activity
+            android:name=".ui.person.myproduct.ModifyTemplateDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我的商品详情-->
+        <activity
+            android:name=".ui.person.myproduct.MyProductDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--网页-->
+        <activity
+            android:name=".ui.web.WebActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--专题活动网页-->
+        <activity
+            android:name=".ui.web.SpecialActivityWebActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <!--3d 设计页面-->
+        <activity
+            android:name=".ui.design.activity.BlenderDesignActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--3d uv面设计页面-->
+
+        <!--用户协议-->
+        <activity
+            android:name=".ui.login.activity.ProtocolActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--相似商品-->
+        <activity
+            android:name=".ui.shopping.activity.SimilarProductActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--搜索收藏商品-->
+        <activity
+            android:name=".ui.person.collection.CollectProductSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--邀请返利-->
+        <activity
+            android:name=".ui.person.invite.InviteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--编辑器-->
+        <activity
+            android:name=".ui.design.activity.EditorActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <!--白色背景透明化页面-->
+        <activity
+            android:name=".ui.design.activity.WhiteToAlphActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材分类-->
+        <activity
+            android:name=".ui.category.material.activity.MaterialCategoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材商城列表-->
+        <activity
+            android:name=".ui.category.material.activity.MaterialCategoryListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材搜索-->
+        <activity
+            android:name=".ui.search.MaterialAndSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材详情页面-->
+        <activity
+            android:name=".ui.category.material.activity.MaterialDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!--我的图片页面-->
+        <activity
+            android:name=".ui.design.activity.HistoryPictureActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--增强页面-->
+        <activity
+            android:name=".ui.design.activity.StrengthenPicActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--足迹页面-->
+        <activity
+            android:name=".ui.person.track.activity.MyTrackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--工艺页面-->
+        <activity
+            android:name=".ui.design.activity.TechnologyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--滤镜页面-->
+        <activity
+            android:name=".ui.design.activity.MyFilterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--流行词页面-->
+        <activity
+            android:name=".ui.design.catchWord.activity.CatchWordListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--流行词搜索页面-->
+        <activity
+            android:name=".ui.design.catchWord.activity.CatchWordSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--流行词搜索结果页面-->
+        <activity
+            android:name=".ui.design.catchWord.activity.SearchResultCatchWordListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--艺术字主列表页面-->
+        <activity
+            android:name=".ui.design.activity.ArtFontMainListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--编辑器素材页面-->
+        <activity
+            android:name=".ui.design.material.activity.MaterialDesignListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--我的素材页面-->
+        <activity
+            android:name=".ui.person.material.activity.MyMaterialActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.person.material.activity.MyUpLoadMaterialSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--通用搜索页面-->
+        <activity
+            android:name=".ui.search.SearchCommonActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <!--评论通用页面-->
+        <activity
+            android:name=".ui.discuss.activity.DiscussMainListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!--评论对话中心页面-->
+        <activity
+            android:name=".ui.discuss.activity.DiscussCenterDialogActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!--评论对话中心页面-->
+        <activity
+            android:name=".ui.discuss.activity.CheckDialogueActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <!--素材订单确认页面-->
+        <activity
+            android:name=".ui.order.activity.MaterialPayConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材支付失败-->
+        <activity
+            android:name=".ui.order.activity.MaterialFailPayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材支付成功-->
+        <activity
+            android:name=".ui.order.activity.MaterialSuccessPayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材 打赏 订单确认页面-->
+        <activity
+            android:name=".ui.order.activity.MaterialRewardPayConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--可定制2d商品页面-->
+        <activity
+            android:name=".ui.category.goods.activity.DesignProductListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--可定制商品搜索页面-->
+        <activity
+            android:name=".ui.search.DesignProductAndSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--收藏页面-->
+        <activity
+            android:name=".ui.person.collection.activity.CollectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--标签选择页面-->
+        <activity
+            android:name=".ui.person.setting.ChangeTagsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--修改个人资料页面-->
+        <activity
+            android:name=".ui.person.setting.ChangeIntroduceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--收藏素材搜索页面-->
+        <activity
+            android:name=".ui.person.collection.CollectMaterialSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--收藏主题搜索页面-->
+        <activity
+            android:name=".ui.person.collection.CollectThemeSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--添加主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--编辑主题页面-->
+        <activity
+            android:name=".ui.theme.activity.EditThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--主题模板选择页面-->
+        <activity
+            android:name=".ui.theme.activity.ThemeTemplateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--我的主题页面-->
+        <activity
+            android:name=".ui.theme.activity.MyThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--主题列表页面-->
+        <activity
+            android:name=".ui.theme.activity.ThemeListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--主题列表页面-->
+        <activity
+            android:name=".ui.theme.activity.ThemeListSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--主题列表搜索页面-->
+        <activity
+            android:name=".ui.designer.activity.NewDesignerListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--设计师搜索列表页面-->
+        <activity
+            android:name=".ui.designer.activity.NewDesignerListSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--主题设置页面-->
+        <activity
+            android:name=".ui.theme.activity.ThemeSettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--最近增加列表页面-->
+        <activity
+            android:name=".ui.theme.activity.NewAddListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--素材列表添加到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddMaterialToThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--素材列表搜索到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddMaterialToThemeSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--商品列表添加到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddProductToThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--商品列表搜索到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddProductToThemeSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--收藏列表添加到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddCollectionToThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--收藏素材列表搜索添加到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddCollectionMaterialToThemeSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!--收藏商品列表搜索添加到主题页面-->
+        <activity
+            android:name=".ui.theme.activity.AddCollectionProductToThemeSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <!--编辑器素材列表我上传的素材的搜索-->
+        <activity
+            android:name=".ui.design.material.activity.MaterialUploadSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--编辑器素材列表我已购素材的搜索-->
+        <activity
+            android:name=".ui.design.material.activity.MaterialBoughtSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--品牌主页-->
+        <activity
+            android:name=".ui.brand.BrandActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--品牌简介-->
+        <activity
+            android:name=".ui.brand.BrandIntroActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计师打赏确认订单页面-->
+        <activity
+            android:name=".ui.order.activity.DesignerRewardPayConfirmOrderActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计师打赏成功页面-->
+        <activity
+            android:name=".ui.order.activity.DesignerRewardSuccessPayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计师打赏失败页面-->
+        <activity
+            android:name=".ui.order.activity.DesignerRewardFailPayResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--品牌列表页-->
+        <activity
+            android:name=".ui.brand.BrandListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--主题列表-->
+
+        <!--品牌搜索页-->
+        <activity
+            android:name=".ui.brand.BrandSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计师搜索页-->
+        <activity
+            android:name=".ui.designer.activity.DesignerSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--预览主题-->
+        <activity
+            android:name=".ui.theme.activity.PreviewThemeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--主题详情-->
+        <activity
+            android:name=".ui.theme.activity.ThemeDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--设计师主页简介-->
+        <activity
+            android:name=".ui.designer.activity.DesignerIntroActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--导航商品列表-->
+        <activity
+            android:name=".ui.category.goods.activity.NavigateProductListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--主页搜索页面-->
+        <activity
+            android:name=".ui.search.MainSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--集合页面-->
+        <activity
+            android:name=".ui.search.CollectionSearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--二维码扫描-->
+        <activity
+            android:name=".ui.util.ScanQrCodeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--海报页面-->
+        <activity
+            android:name=".ui.poster.PosterActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--场景管理-->
+        <activity
+            android:name=".ui.theme.activity.SceneManagerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--我的场景管理-->
+        <activity
+            android:name=".ui.theme.activity.MySceneActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--相册-->
+        <activity
+            android:name=".ui.theme.activity.ScenePhotoManagerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--相册-->
+        <activity
+            android:name=".ui.theme.activity.PostDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!--发布帖子-->
+        <activity
+            android:name=".ui.post.activity.PublishPostActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--选择物流-->
+        <activity
+            android:name=".ui.order.activity.ChooseTransportCompanyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!--第三方-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zhaotai.uzao.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+        <!--ping++ SDK所需要注册-->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" />
+
+
+        <!--微信支付-->
+        <activity-alias
+            android:name="com.zhaotai.uzao.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+
+        <!--友盟推送-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="592e2d7c8f4a9d2644000b28" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="e56fcd7aef7578ac962f401590d0a4e6" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="uzaochian_123" />
+        <!--多渠道打包-->
+        <meta-data
+            android:name="MTA_CHANNEL"
+            android:value="${MTA_CHANNEL_VALUE}" />
+        <!--适配方案 375* 667  iphone尺寸     540*960 正常1080p 尺寸   目前这个是原标注下 控件尺寸不变 比例和1080p尺寸下一样画布尺寸 440*782-->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="440" />
+        <!--  375-->
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="782" />
+        <!--667-->
+
+        <!--微博社会化分享-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!--qq社会化分享-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    </application>
+</manifest>

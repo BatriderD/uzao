@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_loading_page_normal_0"  android:duration="100" />
+    <item android:drawable="@drawable/ic_loading_page_normal_1"  android:duration="100" />
+    <item android:drawable="@drawable/ic_loading_page_normal_2"  android:duration="100" />
+    <item android:drawable="@drawable/ic_loading_page_normal_3"  android:duration="100" />
+    <item android:drawable="@drawable/ic_loading_page_normal_4"  android:duration="100" />
+    <item android:drawable="@drawable/ic_loading_page_normal_5"  android:duration="100" />
+</animation-list>
